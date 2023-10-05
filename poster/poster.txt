@@ -1,3 +1,5 @@
+OUTILS:
+
 logiciels possibles:
 -figma(fait pour les diagrammes/site)
 -photoshop(problème texte)
@@ -7,12 +9,33 @@ logiciels possibles:
 -word (suite office)
 -powerpoint (suite office)
 
+---------------------------------------
+MISE EN PAGE:
+
 format : A1
+mettre 5mm (ou cm) de marge
 
-image amboise
-image des catégorie sociales 
+---------------------------------------
+FOND:
 
-texte par moyen de monter socialement:
+histoire d'amboise 
+image strat sociale
+présentation du personnage que l'on joue
+
+schéma pour devenir nobles:
+-l'argent réduit le temps pour être nobles
 -naissance
--impossibilité pour les femmes (ou par alliance)
--
+-par alliance (seul possibilité pour les femmes)
+-adoublement d'un chevalier
+-lettre d'anoblissement
+-anoblissement par charge (peut être acheté mais chère)
+-anoblissement par fonction 
+-possesion de terre
+-bourgeois peuvent devenir nobles
+
+---------------------------------------
+ROI:
+
+François 1er
+
+---------------------------------------

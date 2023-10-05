@@ -1,0 +1,18 @@
+Objectif:
+
+partir du tier état devenir noble
+
+
+Condition de victoire:
+- un chance de victoire au début de parti
+- un mariage avec une noble
+- devenir chevalier
+- obtenir des terres
+- devenir maire d'amboise
+- être un bourgeois puissant
+- posseder des terres titrées 
+- devenir office (on doit acheter le poste)
+
+condition de défaite:
+- être une femme
+
