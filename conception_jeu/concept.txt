@@ -1,18 +1,18 @@
 Objectif:
+devenir nobles en partant du tiers état
 
-partir du tier état devenir noble
-
+Stats:
+-Argent(influence le gain d'xp)
+-xp(permet de monter en niveau)
 
 Condition de victoire:
-- un chance de victoire au début de parti
-- un mariage avec une noble
-- devenir chevalier
-- obtenir des terres
-- devenir maire d'amboise
-- être un bourgeois puissant
-- posseder des terres titrées 
-- devenir office (on doit acheter le poste)
+-alliance(mariage avec une femme noble
+-lettre d'anoblissement(suffisament d'xp)
+-par naissance(enfant de nobles
 
-condition de défaite:
-- être une femme
+Condition de défaite:
+-par naissance(vous êtes une femme)
+-temps(vous n'êtes pas devenu nobles assez vite 
 
+Quêtes:
+type among us 
