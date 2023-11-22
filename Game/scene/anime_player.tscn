@@ -1,10 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://bvuroropjicf8"]
+[gd_scene load_steps=9 format=3 uid="uid://bi764xd14c4rj"]
 
 [ext_resource type="Script" path="res://script/anime_player.gd" id="1_7mkha"]
-[ext_resource type="Texture2D" uid="uid://dr7mutuu614c8" path="res://images/perso.png" id="2_7kgfg"]
+[ext_resource type="Texture2D" uid="uid://b4yhnunkkdegr" path="res://images/perso.png" id="2_7kgfg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pmudh"]
-size = Vector2(34, 50)
+size = Vector2(34, 21)
 
 [sub_resource type="Animation" id="Animation_2oxoq"]
 resource_name = "down"
@@ -87,7 +87,7 @@ motion_mode = 1
 script = ExtResource("1_7mkha")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 7)
+position = Vector2(0, 21.5)
 shape = SubResource("RectangleShape2D_pmudh")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
