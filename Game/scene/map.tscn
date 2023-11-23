@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://dvhmjb44mbg2x"]
+[gd_scene load_steps=57 format=3 uid="uid://dvhmjb44mbg2x"]
 
 [ext_resource type="Texture2D" uid="uid://c4kng47e2stok" path="res://ASSETS/Sprites/Town Tileset v1.4.png" id="1_jv2g5"]
 [ext_resource type="Texture2D" uid="uid://cc4erftp48ugu" path="res://ASSETS/Sprites/Town Tileset v1.2.png" id="2_y6ljh"]
@@ -21513,6 +21513,9 @@ size = Vector2(6.25, 30.75)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ag5yh"]
 size = Vector2(6, 45)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mkv5j"]
+size = Vector2(12.5, 38.75)
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kutck"]
 texture = ExtResource("2_y6ljh")
 4:0/0 = 0
@@ -24525,6 +24528,14 @@ shape = SubResource("RectangleShape2D_ag5yh")
 [node name="CollisionShape2D11" type="CollisionShape2D" parent="bridge_fence/StaticBody2D"]
 position = Vector2(637, 639)
 shape = SubResource("RectangleShape2D_ag5yh")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="bridge_fence/StaticBody2D"]
+position = Vector2(682, 657)
+shape = SubResource("RectangleShape2D_mkv5j")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="bridge_fence/StaticBody2D"]
+position = Vector2(631, 655)
+shape = SubResource("RectangleShape2D_mkv5j")
 
 [node name="bridge" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_dw7dt")
