@@ -1,11 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://cu1up2yyx6ij6"]
+[gd_scene load_steps=5 format=3 uid="uid://cu1up2yyx6ij6"]
 
 [ext_resource type="PackedScene" uid="uid://dvhmjb44mbg2x" path="res://scene/map.tscn" id="1_ol5m7"]
 [ext_resource type="PackedScene" uid="uid://bi764xd14c4rj" path="res://scene/anime_player.tscn" id="2_mvay1"]
+[ext_resource type="PackedScene" uid="uid://bndpjvgumg6m4" path="res://scene/castle.tscn" id="3_0lnii"]
+[ext_resource type="PackedScene" uid="uid://drjilsvtwpwyj" path="res://scene/fields.tscn" id="4_1oaok"]
 
 [node name="main" type="Node2D"]
 
 [node name="MAP" parent="." instance=ExtResource("1_ol5m7")]
+
+[node name="castle" parent="." instance=ExtResource("3_0lnii")]
+position = Vector2(1088, 131)
+
+[node name="Fields" parent="." instance=ExtResource("4_1oaok")]
+position = Vector2(-48, 27)
 
 [node name="anime_player" parent="." instance=ExtResource("2_mvay1")]
 position = Vector2(585, 314)
