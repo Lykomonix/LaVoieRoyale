@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://0e0qu8v4n52w"]
+
+[ext_resource type="Texture2D" uid="uid://bptr7pamvbvv3" path="res://images/zoin.png" id="1_ctawu"]
+[ext_resource type="Script" path="res://Script/HUD.gd" id="1_ey6y8"]
+[ext_resource type="Texture2D" uid="uid://braufjtb1sko2" path="res://images/sacs.png" id="2_hq0jn"]
+[ext_resource type="Script" path="res://script/sac.gd" id="3_akp2h"]
+[ext_resource type="PackedScene" uid="uid://brgt2hmis76a2" path="res://scene/item.tscn" id="4_6jd3g"]
+
+[node name="HUD" type="CanvasLayer"]
+visible = false
+script = ExtResource("1_ey6y8")
+
+[node name="niveau prestige" type="ProgressBar" parent="."]
+offset_left = 17.0
+offset_top = 17.0
+offset_right = 307.0
+offset_bottom = 65.0
+
+[node name="lbl_argent" type="Label" parent="."]
+offset_left = 85.0
+offset_top = 83.0
+offset_right = 131.0
+offset_bottom = 141.0
+theme_override_font_sizes/font_size = 40
+text = "0"
+vertical_alignment = 1
+
+[node name="zoin" type="Sprite2D" parent="."]
+position = Vector2(50.75, 109.75)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_ctawu")
+
+[node name="sac" type="Sprite2D" parent="."]
+position = Vector2(96, 984)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_hq0jn")
+vframes = 2
+script = ExtResource("3_akp2h")
+
+[node name="item" parent="." instance=ExtResource("4_6jd3g")]
+offset_left = 390.0
+offset_top = 128.0
+offset_right = 1590.0
+offset_bottom = 928.0
+
+[node name="son" type="AudioStreamPlayer2D" parent="."]
