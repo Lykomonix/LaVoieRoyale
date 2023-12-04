@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://brgt2hmis76a2"]
+
+[ext_resource type="Texture2D" uid="uid://deueequpmjyna" path="res://images/henri.jpg" id="1_1ryqo"]
+[ext_resource type="Script" path="res://script/item.gd" id="1_a02la"]
+
+[node name="item" type="ColorRect"]
+custom_minimum_size = Vector2(1200, 800)
+offset_right = 1200.0
+offset_bottom = 800.0
+color = Color(0.462745, 0.247059, 0.0352941, 1)
+script = ExtResource("1_a02la")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(597, 395)
+scale = Vector2(0.854167, 0.854167)
+texture = ExtResource("1_1ryqo")
