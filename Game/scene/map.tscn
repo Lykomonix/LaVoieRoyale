@@ -1,13 +1,13 @@
 [gd_scene load_steps=59 format=3 uid="uid://dvhmjb44mbg2x"]
 
-[ext_resource type="Texture2D" uid="uid://c4kng47e2stok" path="res://ASSETS/Sprites/Town Tileset v1.4.png" id="1_jv2g5"]
-[ext_resource type="Texture2D" uid="uid://cc4erftp48ugu" path="res://ASSETS/Sprites/Town Tileset v1.2.png" id="2_y6ljh"]
-[ext_resource type="Texture2D" uid="uid://5bh1e65s1sqp" path="res://ASSETS/Animated Water.png" id="3_jxs8o"]
-[ext_resource type="Texture2D" uid="uid://udin81xe52e2" path="res://ASSETS/water_tileset1.png" id="3_mbis8"]
-[ext_resource type="Texture2D" uid="uid://cmylvtxybwc4a" path="res://ASSETS/plains_V2.png" id="4_mm72d"]
-[ext_resource type="Texture2D" uid="uid://cvfovq880gqqr" path="res://ASSETS/water_tileset2.png" id="4_p2vi7"]
-[ext_resource type="Texture2D" uid="uid://0ho64krr5nyo" path="res://ASSETS/plains.png" id="5_8mfk3"]
-[ext_resource type="Texture2D" uid="uid://boo166dbascl7" path="res://ASSETS/castle.png" id="7_tbmh4"]
+[ext_resource type="Texture2D" uid="uid://d16p8drxmwaiq" path="res://ASSETS/Sprites/Town Tileset v1.4.png" id="1_jv2g5"]
+[ext_resource type="Texture2D" uid="uid://b7aj1phccvwq0" path="res://ASSETS/Sprites/Town Tileset v1.2.png" id="2_y6ljh"]
+[ext_resource type="Texture2D" uid="uid://dbngleoga4nwm" path="res://ASSETS/Animated Water.png" id="3_jxs8o"]
+[ext_resource type="Texture2D" uid="uid://hjr0owqhuqub" path="res://ASSETS/water_tileset1.png" id="3_mbis8"]
+[ext_resource type="Texture2D" uid="uid://cuby2lh2o5x78" path="res://ASSETS/plains_V2.png" id="4_mm72d"]
+[ext_resource type="Texture2D" uid="uid://cs43wpd0pd76d" path="res://ASSETS/water_tileset2.png" id="4_p2vi7"]
+[ext_resource type="Texture2D" uid="uid://b20dm44q8bwes" path="res://ASSETS/plains.png" id="5_8mfk3"]
+[ext_resource type="Texture2D" uid="uid://1tcrvw5gmqf2" path="res://ASSETS/castle.png" id="7_tbmh4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rxf1t"]
 texture = ExtResource("1_jv2g5")
