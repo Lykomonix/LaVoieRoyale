@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://dgncvdemtyg47"]
+
+[ext_resource type="Script" path="res://script/PNJ.gd" id="1_lqbls"]
+[ext_resource type="Texture2D" uid="uid://dfvpgwcdl7alr" path="res://icon.svg" id="2_yi6ab"]
+[ext_resource type="Texture2D" uid="uid://65eeln50kkw6" path="res://images/quest.png" id="3_ghabv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_36ofq"]
+size = Vector2(64, 32)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d65sc"]
+radius = 32.0
+
+[node name="PNJ" type="CharacterBody2D"]
+script = ExtResource("1_lqbls")
+
+[node name="colPNJ" type="CollisionShape2D" parent="."]
+position = Vector2(0, 8)
+scale = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_36ofq")
+
+[node name="sprPNJ" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_yi6ab")
+
+[node name="sprQuest" type="Sprite2D" parent="."]
+position = Vector2(0, -32)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_ghabv")
+vframes = 2
+
+[node name="dialogue" type="Area2D" parent="."]
+
+[node name="colDialogue" type="CollisionShape2D" parent="dialogue"]
+position = Vector2(-1, 2)
+shape = SubResource("CircleShape2D_d65sc")
+
+[connection signal="body_entered" from="dialogue" to="." method="_on_dialogue_body_entered"]
+[connection signal="body_exited" from="dialogue" to="." method="_on_dialogue_body_exited"]
