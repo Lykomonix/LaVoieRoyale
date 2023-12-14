@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://bi764xd14c4rj"]
 
 [ext_resource type="Script" path="res://script/anime_player.gd" id="1_7mkha"]
-[ext_resource type="Texture2D" uid="uid://b4yhnunkkdegr" path="res://images/perso.png" id="2_7kgfg"]
+[ext_resource type="Texture2D" uid="uid://bc0ebhltceimj" path="res://images/perso.png" id="2_7kgfg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pmudh"]
 size = Vector2(20, 13)

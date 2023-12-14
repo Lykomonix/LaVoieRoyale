@@ -10,13 +10,16 @@ func _process(delta):
 	if Input.is_action_pressed("ui_up"):
 		velocity.y -= speed
 		$animation.play("up")
-	if Input.is_action_pressed("ui_down"):
+	elif Input.is_action_pressed("ui_down"):
 		velocity.y += speed
 		$animation.play("down")
-	if Input.is_action_pressed("ui_right"):
+	elif Input.is_action_pressed("ui_right"):
 		velocity.x += speed
 		$animation.play("right")
-	if Input.is_action_pressed("ui_left"):
+	elif Input.is_action_pressed("ui_left"):
 		velocity.x -= speed
 		$animation.play("left")
 	move_and_slide()
+
+func player():
+	pass
