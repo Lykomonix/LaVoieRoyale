@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://script/item.gd" id="1_a02la"]
 [ext_resource type="Texture2D" uid="uid://bc0ebhltceimj" path="res://images/perso.png" id="2_tar6u"]
-[ext_resource type="Texture2D" uid="uid://bh20cxk7wl8sj" path="res://images/items.png" id="3_vhsbg"]
+[ext_resource type="Texture2D" uid="uid://dqwep7b5p5mpa" path="res://images/items.png" id="3_vhsbg"]
 
 [node name="item" type="ColorRect"]
 custom_minimum_size = Vector2(1200, 800)
