@@ -1,0 +1,75 @@
+[gd_scene load_steps=6 format=3 uid="uid://lht7i3eutj2x"]
+
+[ext_resource type="Script" path="res://script/windowEnd.gd" id="1_i8cs5"]
+[ext_resource type="PackedScene" uid="uid://dvhmjb44mbg2x" path="res://scene/map.tscn" id="1_vm521"]
+[ext_resource type="PackedScene" uid="uid://drjilsvtwpwyj" path="res://scene/fields.tscn" id="2_al7bj"]
+[ext_resource type="PackedScene" uid="uid://bndpjvgumg6m4" path="res://scene/castle.tscn" id="3_16el3"]
+[ext_resource type="Texture2D" uid="uid://dkpt7vvkp5trd" path="res://images/crown.png" id="4_xwow8"]
+
+[node name="windowWin" type="Node2D"]
+script = ExtResource("1_i8cs5")
+
+[node name="downtown" parent="." instance=ExtResource("1_vm521")]
+
+[node name="Fields" parent="." instance=ExtResource("2_al7bj")]
+position = Vector2(-48, 27)
+
+[node name="castle" parent="." instance=ExtResource("3_16el3")]
+position = Vector2(1088, 131)
+
+[node name="zoneText" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(1024, 640)
+offset_right = 1920.0
+offset_bottom = 1088.0
+color = Color(0.4, 0.4, 0.4, 0.603922)
+
+[node name="lblAccueil" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_top = 864.0
+offset_right = 1920.0
+offset_bottom = 936.0
+theme_override_font_sizes/font_size = 50
+text = "retourner à l'accueil"
+horizontal_alignment = 1
+
+[node name="lblChoix" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_left = 672.0
+offset_top = 864.0
+offset_right = 712.0
+offset_bottom = 936.0
+theme_override_font_sizes/font_size = 50
+text = ">"
+
+[node name="sprCrown" type="Sprite2D" parent="zoneText"]
+position = Vector2(960, 192)
+texture = ExtResource("4_xwow8")
+
+[node name="lblWin" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_top = 384.0
+offset_right = 1920.0
+offset_bottom = 524.0
+theme_override_font_sizes/font_size = 100
+text = "Gagné"
+horizontal_alignment = 1
+
+[node name="lblDescription" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_top = 576.0
+offset_right = 1920.0
+offset_bottom = 792.0
+theme_override_font_sizes/font_size = 50
+text = "Vous avez récolté assez
+d'éxpériences et/ou d'argents et
+êtes donc devenu noble"
+horizontal_alignment = 1
+
+[node name="lblQuitter" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_top = 960.0
+offset_right = 1920.0
+offset_bottom = 1032.0
+theme_override_font_sizes/font_size = 50
+text = "Quitter"
+horizontal_alignment = 1

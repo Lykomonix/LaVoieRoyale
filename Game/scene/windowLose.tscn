@@ -1,0 +1,76 @@
+[gd_scene load_steps=6 format=3 uid="uid://pc0ouypw3qfm"]
+
+[ext_resource type="PackedScene" uid="uid://dvhmjb44mbg2x" path="res://scene/map.tscn" id="1_4kvm3"]
+[ext_resource type="Script" path="res://script/windowEnd.gd" id="1_en38s"]
+[ext_resource type="PackedScene" uid="uid://drjilsvtwpwyj" path="res://scene/fields.tscn" id="2_b144c"]
+[ext_resource type="PackedScene" uid="uid://bndpjvgumg6m4" path="res://scene/castle.tscn" id="3_ob538"]
+[ext_resource type="Texture2D" uid="uid://do7f8fm4vow1r" path="res://images/hourglass.png" id="4_7jkh7"]
+
+[node name="windowLose" type="Node2D"]
+script = ExtResource("1_en38s")
+
+[node name="downtown" parent="." instance=ExtResource("1_4kvm3")]
+
+[node name="Fields" parent="." instance=ExtResource("2_b144c")]
+position = Vector2(-48, 27)
+
+[node name="castle" parent="." instance=ExtResource("3_ob538")]
+position = Vector2(1088, 131)
+
+[node name="zoneText" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(1024, 640)
+offset_right = 1920.0
+offset_bottom = 1088.0
+color = Color(0.4, 0.4, 0.4, 0.603922)
+
+[node name="lblAccueil" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_top = 864.0
+offset_right = 1920.0
+offset_bottom = 936.0
+theme_override_font_sizes/font_size = 50
+text = "retourner à l'accueil"
+horizontal_alignment = 1
+
+[node name="lblChoix" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_left = 672.0
+offset_top = 864.0
+offset_right = 712.0
+offset_bottom = 936.0
+theme_override_font_sizes/font_size = 50
+text = ">"
+
+[node name="sprCrown" type="Sprite2D" parent="zoneText"]
+position = Vector2(960, 192)
+scale = Vector2(1.7, 1.7)
+texture = ExtResource("4_7jkh7")
+
+[node name="lblWin" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_top = 384.0
+offset_right = 1920.0
+offset_bottom = 524.0
+theme_override_font_sizes/font_size = 100
+text = "Perdu"
+horizontal_alignment = 1
+
+[node name="lblDescription" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_top = 576.0
+offset_right = 1920.0
+offset_bottom = 792.0
+theme_override_font_sizes/font_size = 50
+text = "Vous n'avez pas réussi à vous élevez
+assez rapidement et avez donc échoué
+dans votre Tâche"
+horizontal_alignment = 1
+
+[node name="lblQuitter" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_top = 960.0
+offset_right = 1920.0
+offset_bottom = 1032.0
+theme_override_font_sizes/font_size = 50
+text = "Quitter"
+horizontal_alignment = 1

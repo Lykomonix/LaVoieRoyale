@@ -6,26 +6,22 @@ func _process(delta):
 	if Input.is_action_just_pressed("ui_up") and choix != 1:
 		choix-=1
 		changePos()
-	if Input.is_action_just_pressed("ui_down") and choix != 3:
+	if Input.is_action_just_pressed("ui_down") and choix != 2:
 		choix+=1
 		changePos()
 	if Input.is_action_just_pressed("ui_accept"):
 		check()
-		
+
 func changePos():
 	match choix:
 		1:
-			$zoneText/lblChoix.position = Vector2(736,768)
+			$zoneText/lblChoix.position = Vector2(672,864)
 		2:
-			$zoneText/lblChoix.position = Vector2(832,864)
-		3:
 			$zoneText/lblChoix.position = Vector2(832,960)
-
+			
 func check():
 		match choix:
 			1:
-				get_parent().nouvellePartie()
+				get_parent().Accueil()
 			2:
-				get_parent().credits()
-			3:
 				get_tree().quit()

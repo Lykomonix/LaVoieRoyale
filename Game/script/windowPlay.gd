@@ -8,6 +8,10 @@ var rng = RandomNumberGenerator.new()
 func _process(delta):
 	$HUD/prestige.value = prestige
 	$HUD/lbl_argent.text = str(argent)
+	if Input.is_key_pressed(KEY_A):
+		get_parent().gagne()
+	if Input.is_key_pressed(KEY_E):
+		get_parent().perdu()
 
 func ajouteItem(item):
 	inventaire.append(item)
