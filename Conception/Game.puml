@@ -1,0 +1,58 @@
+@startuml
+title Conception Game_T3
+
+skinparam style strictuml
+skinparam classAttributeIconSize 0
+skinparam classFontStyle Bold
+hide enum methods
+
+/''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'                          classes                        '
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''/
+class App
+
+class Window
+
+class WindowStart implements Window
+{
+    + map : Map
+    + home : Home
+    + credits : Credits
+}
+
+class WindowPlay implements Window
+{
+    
+    + map : Map
+}
+
+class WindowEnd implements Window
+
+class Home
+{
+    + lblTitre : label
+    + lblDescription : label
+    + lblPartie  : label
+    + lblCrédits : label
+    + lblQuitter : label
+}
+
+class Credits
+{
+    /'à faire'/
+}
+class Map
+
+class Player
+
+class Npc
+
+class Hud
+/''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'                          liens                         '
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''/
+App o->"1\n-_window" Window : affiche
+
+
+
+@enduml

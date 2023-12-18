@@ -1,0 +1,80 @@
+[gd_scene load_steps=5 format=3 uid="uid://nwjiv2mb14yq"]
+
+[ext_resource type="PackedScene" uid="uid://dvhmjb44mbg2x" path="res://scene/map.tscn" id="1_bvllo"]
+[ext_resource type="Script" path="res://script/windowStart.gd" id="1_k5ff4"]
+[ext_resource type="PackedScene" uid="uid://drjilsvtwpwyj" path="res://scene/fields.tscn" id="2_21f5n"]
+[ext_resource type="PackedScene" uid="uid://bndpjvgumg6m4" path="res://scene/castle.tscn" id="3_shloj"]
+
+[node name="windowStart" type="Node2D"]
+script = ExtResource("1_k5ff4")
+
+[node name="downtown" parent="." instance=ExtResource("1_bvllo")]
+
+[node name="Fields" parent="." instance=ExtResource("2_21f5n")]
+position = Vector2(-48, 27)
+
+[node name="castle" parent="." instance=ExtResource("3_shloj")]
+position = Vector2(1088, 131)
+
+[node name="zoneText" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(1024, 640)
+offset_right = 1920.0
+offset_bottom = 1088.0
+color = Color(0.4, 0.4, 0.4, 0.603922)
+
+[node name="lblTitre" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_top = 160.0
+offset_right = 1920.0
+offset_bottom = 273.0
+theme_override_font_sizes/font_size = 80
+text = "La Voie Royale"
+horizontal_alignment = 1
+
+[node name="lblDescription" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_top = 352.0
+offset_right = 1920.0
+offset_bottom = 512.0
+theme_override_font_sizes/font_size = 50
+text = "Vous êtes un citoyen amboisien et vous 
+devez trouver le moyen de vous faire
+anoblir. Pour ce faire, vous aures des 
+quêtes à réaliser !"
+horizontal_alignment = 1
+
+[node name="lblJouer" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_top = 768.0
+offset_right = 1920.0
+offset_bottom = 840.0
+theme_override_font_sizes/font_size = 50
+text = "Nouvelle Partie"
+horizontal_alignment = 1
+
+[node name="lblCredits" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_top = 864.0
+offset_right = 1920.0
+offset_bottom = 936.0
+theme_override_font_sizes/font_size = 50
+text = "Crédits"
+horizontal_alignment = 1
+
+[node name="lblQuitter" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_top = 960.0
+offset_right = 1920.0
+offset_bottom = 1032.0
+theme_override_font_sizes/font_size = 50
+text = "Quitter"
+horizontal_alignment = 1
+
+[node name="lblChoix" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_left = 736.0
+offset_top = 768.0
+offset_right = 768.0
+offset_bottom = 840.0
+theme_override_font_sizes/font_size = 50
+text = ">"

@@ -1,0 +1,29 @@
+[gd_scene load_steps=8 format=3 uid="uid://cu1up2yyx6ij6"]
+
+[ext_resource type="Script" path="res://script/windowPlay.gd" id="1_j400o"]
+[ext_resource type="PackedScene" uid="uid://dvhmjb44mbg2x" path="res://scene/map.tscn" id="2_cubkw"]
+[ext_resource type="PackedScene" uid="uid://bndpjvgumg6m4" path="res://scene/castle.tscn" id="3_mp580"]
+[ext_resource type="PackedScene" uid="uid://drjilsvtwpwyj" path="res://scene/fields.tscn" id="4_1sn7g"]
+[ext_resource type="PackedScene" uid="uid://dgncvdemtyg47" path="res://scene/PNJ.tscn" id="5_e6mf4"]
+[ext_resource type="PackedScene" uid="uid://bi764xd14c4rj" path="res://scene/anime_player.tscn" id="6_58hb1"]
+[ext_resource type="PackedScene" uid="uid://0e0qu8v4n52w" path="res://scene/HUD.tscn" id="7_rta0t"]
+
+[node name="main" type="Node2D"]
+position = Vector2(-1, 1)
+script = ExtResource("1_j400o")
+
+[node name="MAP" parent="." instance=ExtResource("2_cubkw")]
+
+[node name="castle" parent="." instance=ExtResource("3_mp580")]
+position = Vector2(1088, 131)
+
+[node name="Fields" parent="." instance=ExtResource("4_1sn7g")]
+position = Vector2(-48, 27)
+
+[node name="PNJ" parent="." instance=ExtResource("5_e6mf4")]
+position = Vector2(479, 483)
+
+[node name="player" parent="." instance=ExtResource("6_58hb1")]
+position = Vector2(585, 314)
+
+[node name="HUD" parent="." instance=ExtResource("7_rta0t")]

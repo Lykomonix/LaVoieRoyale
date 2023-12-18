@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://b6qh5v7yq5eiy"]
+
+[ext_resource type="Script" path="res://script/windowCredits.gd" id="1_2qbv5"]
+[ext_resource type="PackedScene" uid="uid://dvhmjb44mbg2x" path="res://scene/map.tscn" id="1_awcyk"]
+[ext_resource type="PackedScene" uid="uid://drjilsvtwpwyj" path="res://scene/fields.tscn" id="2_66okj"]
+[ext_resource type="PackedScene" uid="uid://bndpjvgumg6m4" path="res://scene/castle.tscn" id="3_5lhuj"]
+
+[node name="windowCredits" type="Node2D"]
+script = ExtResource("1_2qbv5")
+
+[node name="downtown" parent="." instance=ExtResource("1_awcyk")]
+
+[node name="Fields" parent="." instance=ExtResource("2_66okj")]
+position = Vector2(-48, 27)
+
+[node name="castle" parent="." instance=ExtResource("3_5lhuj")]
+position = Vector2(1088, 131)
+
+[node name="zoneText" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(1024, 640)
+offset_right = 1920.0
+offset_bottom = 1088.0
+color = Color(0.4, 0.4, 0.4, 0.603922)
+
+[node name="lblAccueil" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_top = 896.0
+offset_right = 1920.0
+offset_bottom = 968.0
+theme_override_font_sizes/font_size = 50
+text = "retourner à l'accueil"
+horizontal_alignment = 1
+
+[node name="lblChoix" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_left = 672.0
+offset_top = 896.0
+offset_right = 712.0
+offset_bottom = 968.0
+theme_override_font_sizes/font_size = 50
+text = ">"
