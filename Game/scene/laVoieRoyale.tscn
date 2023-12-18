@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0pukjp003cup"]
+
+[ext_resource type="Script" path="res://script/laVoieRoyale.gd" id="1_hgytm"]
+
+[node name="laVoieRoyale" type="Node2D"]
+script = ExtResource("1_hgytm")
