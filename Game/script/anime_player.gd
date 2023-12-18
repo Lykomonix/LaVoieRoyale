@@ -1,9 +1,11 @@
 extends CharacterBody2D
 
 @export var speed = 150
+var sprite
 
 func _ready():
-	pass
+	sprite = load("res://images/persoBase.png")
+	$sprPerso.set_texture(sprite)
 	
 func _process(delta):
 	velocity = Vector2()

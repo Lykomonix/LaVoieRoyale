@@ -22,7 +22,7 @@ position = Vector2(-48, 27)
 [node name="PNJ" parent="." instance=ExtResource("6_tjwwa")]
 position = Vector2(479, 483)
 
-[node name="anime_player" parent="." instance=ExtResource("2_mvay1")]
+[node name="player" parent="." instance=ExtResource("2_mvay1")]
 position = Vector2(585, 314)
 
 [node name="HUD" parent="." instance=ExtResource("5_x5igi")]

@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://brgt2hmis76a2" path="res://scene/item.tscn" id="4_6jd3g"]
 
 [node name="HUD" type="CanvasLayer"]
+visible = false
 script = ExtResource("1_ey6y8")
 
 [node name="prestige" type="ProgressBar" parent="."]
