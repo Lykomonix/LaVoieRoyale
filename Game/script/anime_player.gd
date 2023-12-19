@@ -21,6 +21,8 @@ func _process(delta):
 	elif Input.is_action_pressed("ui_left"):
 		velocity.x -= speed
 		$animation.play("left")
+	else:
+		$animation.play("stay")
 	move_and_slide()
 
 func player():
