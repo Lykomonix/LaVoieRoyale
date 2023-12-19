@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://brgt2hmis76a2"]
+[gd_scene load_steps=3 format=3 uid="uid://brgt2hmis76a2"]
 
 [ext_resource type="Script" path="res://script/item.gd" id="1_a02la"]
-[ext_resource type="Texture2D" uid="uid://bc0ebhltceimj" path="res://images/perso.png" id="2_tar6u"]
-[ext_resource type="Texture2D" uid="uid://dqwep7b5p5mpa" path="res://images/items.png" id="3_vhsbg"]
+[ext_resource type="Texture2D" uid="uid://crjipy7o8ym65" path="res://images/items.png" id="3_vhsbg"]
 
 [node name="item" type="ColorRect"]
 custom_minimum_size = Vector2(1200, 800)
@@ -13,62 +12,61 @@ script = ExtResource("1_a02la")
 
 [node name="perso" type="ColorRect" parent="."]
 layout_mode = 0
-offset_left = 462.0
-offset_top = 188.0
-offset_right = 709.0
-offset_bottom = 459.0
+offset_left = 512.0
+offset_top = 64.0
+offset_right = 1120.0
+offset_bottom = 731.0
 
 [node name="sprperso" type="Sprite2D" parent="perso"]
 position = Vector2(124.5, 123.5)
-scale = Vector2(3.82813, 3.82813)
-texture = ExtResource("2_tar6u")
+scale = Vector2(10, 10)
 hframes = 13
 vframes = 21
 frame = 26
 
 [node name="sprchapeau" type="Sprite2D" parent="."]
-position = Vector2(210, 132)
-scale = Vector2(0.2, 0.2)
+position = Vector2(192, 192)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_vhsbg")
 hframes = 2
 vframes = 6
 frame = 3
 
 [node name="sprchemise" type="Sprite2D" parent="."]
-position = Vector2(213, 333)
-scale = Vector2(0.2, 0.2)
+position = Vector2(192, 320)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_vhsbg")
 hframes = 2
 vframes = 6
 frame = 5
 
 [node name="sprpantalon" type="Sprite2D" parent="."]
-position = Vector2(214, 513)
-scale = Vector2(0.2, 0.2)
+position = Vector2(192, 448)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_vhsbg")
 hframes = 2
 vframes = 6
 frame = 9
 
 [node name="sprbottes" type="Sprite2D" parent="."]
-position = Vector2(214, 658)
-scale = Vector2(0.2, 0.2)
+position = Vector2(192, 576)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_vhsbg")
 hframes = 2
 vframes = 6
 frame = 11
 
 [node name="sprcape" type="Sprite2D" parent="."]
-position = Vector2(942, 255)
-scale = Vector2(0.2, 0.2)
+position = Vector2(320, 320)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_vhsbg")
 hframes = 2
 vframes = 6
 frame = 7
 
 [node name="sprepee" type="Sprite2D" parent="."]
-position = Vector2(946, 501)
-scale = Vector2(0.2, 0.2)
+position = Vector2(320, 448)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_vhsbg")
 hframes = 2
 vframes = 6

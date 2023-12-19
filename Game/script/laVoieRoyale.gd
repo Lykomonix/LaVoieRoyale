@@ -21,12 +21,16 @@ func Accueil():
 	window = preload("res://scene/windowStart.tscn").instantiate()
 	add_child(window)
 
-func gagne():
+func gagne(text = null):
 	window.queue_free()
 	window = preload("res://scene/windowWin.tscn").instantiate()
 	add_child(window)
+	if(text != null):
+		$windowWin/zoneText/lblDescription.text = text
 	
-func perdu():
+func perdu(text = null):
 	window.queue_free()
 	window = preload("res://scene/windowLose.tscn").instantiate()
 	add_child(window)
+	if(text != null):
+		$windowLose/zoneText/lblDescription.text = text
