@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://b6qh5v7yq5eiy"]
+[gd_scene load_steps=6 format=3 uid="uid://b6qh5v7yq5eiy"]
 
 [ext_resource type="Script" path="res://script/windowCredits.gd" id="1_2qbv5"]
 [ext_resource type="PackedScene" uid="uid://dvhmjb44mbg2x" path="res://scene/map.tscn" id="1_awcyk"]
 [ext_resource type="PackedScene" uid="uid://drjilsvtwpwyj" path="res://scene/fields.tscn" id="2_66okj"]
 [ext_resource type="PackedScene" uid="uid://bndpjvgumg6m4" path="res://scene/castle.tscn" id="3_5lhuj"]
+[ext_resource type="Texture2D" uid="uid://d16ekk86dbqpj" path="res://images/henri.jpg" id="5_juw6l"]
 
 [node name="windowCredits" type="Node2D"]
 script = ExtResource("1_2qbv5")
@@ -39,3 +40,7 @@ offset_right = 712.0
 offset_bottom = 968.0
 theme_override_font_sizes/font_size = 50
 text = ">"
+
+[node name="sprHenri" type="Sprite2D" parent="zoneText"]
+position = Vector2(960, 416)
+texture = ExtResource("5_juw6l")

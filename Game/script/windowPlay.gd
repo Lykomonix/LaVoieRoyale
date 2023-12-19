@@ -5,6 +5,13 @@ var inventaire = []
 var argent = 0
 var rng = RandomNumberGenerator.new()
 
+func _ready():
+	var ranNumber = rng.randi_range(1, 100)
+	if(ranNumber <= 5):
+		get_parent().gagne("Vous êtes le fils ou la fille du roi")
+	elif(ranNumber <= 10):
+		get_parent().perdu("Vous êtes une fille, vous ne pouvez donc pas devenir noble")
+
 func _process(delta):
 	$HUD/prestige.value = prestige
 	$HUD/lbl_argent.text = str(argent)

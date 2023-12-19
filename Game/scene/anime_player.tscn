@@ -1,11 +1,25 @@
-[gd_scene load_steps=10 format=3 uid="uid://bi764xd14c4rj"]
+[gd_scene load_steps=11 format=3 uid="uid://bi764xd14c4rj"]
 
 [ext_resource type="Script" path="res://script/anime_player.gd" id="1_7mkha"]
-[ext_resource type="Texture2D" path="res://images/perso.png" id="2_7kgfg"]
 [ext_resource type="Texture2D" uid="uid://b1r4qqmqh6tfx" path="res://images/here.png" id="3_alqwo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pmudh"]
 size = Vector2(20, 13)
+
+[sub_resource type="Animation" id="Animation_panqn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprPerso:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [130]
+}
 
 [sub_resource type="Animation" id="Animation_2oxoq"]
 resource_name = "down"
@@ -58,6 +72,21 @@ tracks/0/keys = {
 "values": [143, 144, 145, 146, 147, 148, 149, 150, 151]
 }
 
+[sub_resource type="Animation" id="Animation_glmn8"]
+resource_name = "stay"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprPerso:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [130, 130]
+}
+
 [sub_resource type="Animation" id="Animation_kjowm"]
 resource_name = "up"
 length = 0.9
@@ -77,9 +106,11 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2j7b3"]
 _data = {
+"RESET": SubResource("Animation_panqn"),
 "down": SubResource("Animation_2oxoq"),
 "left": SubResource("Animation_mi02d"),
 "right": SubResource("Animation_ixw2a"),
+"stay": SubResource("Animation_glmn8"),
 "up": SubResource("Animation_kjowm")
 }
 
@@ -94,7 +125,6 @@ shape = SubResource("RectangleShape2D_pmudh")
 [node name="sprPerso" type="Sprite2D" parent="."]
 position = Vector2(-9.53674e-07, 11)
 scale = Vector2(0.65625, 0.65625)
-texture = ExtResource("2_7kgfg")
 hframes = 13
 vframes = 21
 frame = 130
