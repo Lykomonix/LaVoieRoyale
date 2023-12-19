@@ -27,3 +27,9 @@ position = Vector2(479, 483)
 position = Vector2(585, 314)
 
 [node name="HUD" parent="." instance=ExtResource("7_rta0t")]
+
+[node name="princesse" parent="." instance=ExtResource("5_e6mf4")]
+position = Vector2(1633, 607)
+
+[node name="roi" parent="." instance=ExtResource("5_e6mf4")]
+position = Vector2(1729, 607)

@@ -11,6 +11,8 @@ func _ready():
 		get_parent().gagne("Vous êtes le fils ou la fille du roi")
 	elif(ranNumber <= 10):
 		get_parent().perdu("Vous êtes une fille, vous ne pouvez donc pas devenir noble")
+	$princesse/sprPNJ.frame = 0
+	$roi/sprPNJ.frame = 1
 
 func _process(delta):
 	$HUD/prestige.value = prestige
@@ -22,7 +24,6 @@ func _process(delta):
 
 func ajouteItem(item):
 	inventaire.append(item)
-	$PNJ.nb_item += 1
 	print("+1 %s" % item)
 	prestige += 10
 	match item:
