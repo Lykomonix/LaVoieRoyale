@@ -64,8 +64,8 @@ func ajouteArgent():
 	argent += gain
 
 func setPNJ():
-	$princesse/sprPNJ.frame = 0
-	$roi/sprPNJ.frame = 1
+	$roi/sprPNJ.frame = 0
+	$princesse/sprPNJ.frame = 1
 	$arnaqueur/sprPNJ.frame = 2
 	$notaire/sprPNJ.frame = 3
 	$enfant/sprPNJ.frame = 4

@@ -16,12 +16,12 @@ radius = 32.0
 script = ExtResource("1_lqbls")
 
 [node name="colPNJ" type="CollisionShape2D" parent="."]
-position = Vector2(0, 6.5)
+position = Vector2(0, 27)
 scale = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_36ofq")
 
 [node name="sprPNJ" type="Sprite2D" parent="."]
-position = Vector2(0, -10)
+position = Vector2(0, 10)
 scale = Vector2(0.656, 0.656)
 texture = ExtResource("2_k4b8w")
 hframes = 3
@@ -29,7 +29,7 @@ vframes = 4
 script = ExtResource("3_54iex")
 
 [node name="sprQuest" type="Sprite2D" parent="."]
-position = Vector2(0, -38)
+position = Vector2(0, -26)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("3_ghabv")
 vframes = 2
@@ -39,10 +39,9 @@ offset_top = -25.0
 offset_bottom = -25.0
 
 [node name="zoneDialogue" type="Area2D" parent="Dialogue"]
-position = Vector2(0, 25)
+position = Vector2(0, 45)
 
 [node name="colDialogue" type="CollisionShape2D" parent="Dialogue/zoneDialogue"]
-position = Vector2(-1, 2)
 shape = SubResource("CircleShape2D_d65sc")
 
 [connection signal="body_entered" from="Dialogue/zoneDialogue" to="." method="_on_dialogue_body_entered"]

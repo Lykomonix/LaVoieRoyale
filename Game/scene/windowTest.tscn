@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://cbde4ncinxdu2"]
+
+[ext_resource type="PackedScene" uid="uid://bj1g5xutg7yxw" path="res://scene/newMap.tscn" id="1_1mjiq"]
+[ext_resource type="Script" path="res://script/windowPlay.gd" id="1_qvymn"]
+[ext_resource type="PackedScene" uid="uid://bi764xd14c4rj" path="res://scene/anime_player.tscn" id="2_cf20v"]
+[ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/PNJ.tscn" id="3_0xtay"]
+[ext_resource type="PackedScene" uid="uid://0e0qu8v4n52w" path="res://scene/HUD.tscn" id="5_n8r3j"]
+
+[node name="windowTest" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_qvymn")
+
+[node name="newMap" parent="." instance=ExtResource("1_1mjiq")]
+
+[node name="player" parent="." instance=ExtResource("2_cf20v")]
+position = Vector2(286, 585)
+
+[node name="princesse" parent="." instance=ExtResource("3_0xtay")]
+position = Vector2(1780, 568)
+
+[node name="roi" parent="." instance=ExtResource("3_0xtay")]
+position = Vector2(1778, 512)
+
+[node name="enfant" parent="." instance=ExtResource("3_0xtay")]
+position = Vector2(1079, 642)
+
+[node name="arnaqueur" parent="." instance=ExtResource("3_0xtay")]
+position = Vector2(1160, 198)
+
+[node name="notaire" parent="." instance=ExtResource("3_0xtay")]
+position = Vector2(1120, 449)
+
+[node name="paysan" parent="." instance=ExtResource("3_0xtay")]
+position = Vector2(345, 572)
+
+[node name="tavernier" parent="." instance=ExtResource("3_0xtay")]
+position = Vector2(880, 312)
+
+[node name="professeur" parent="." instance=ExtResource("3_0xtay")]
+position = Vector2(1112, 881)
+
+[node name="mamie" parent="." instance=ExtResource("3_0xtay")]
+position = Vector2(813, 711)
+
+[node name="maire" parent="." instance=ExtResource("3_0xtay")]
+position = Vector2(822, 882)
+
+[node name="pecheur" parent="." instance=ExtResource("3_0xtay")]
+position = Vector2(436, 1003)
+
+[node name="HUD" parent="." instance=ExtResource("5_n8r3j")]
