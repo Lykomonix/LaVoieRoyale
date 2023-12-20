@@ -1,7 +1,7 @@
-# T3
+# T3 - La Voie Royale
 
 - Nom du groupe : AUSKOUR
-- Nom du jeu :
+- Nom du jeu : La Voie Royale
 - Membres du groupe :
     - Mathieu ACKERMANN
     - Henri HARTZ
@@ -23,17 +23,23 @@ On débute la partie en tant qu'habitant Amboisien du tiers-état. L'objectif du
 
 ## Procédure d'installation et d'exécution
 ### Sous windows
-- Effectuez un *git clone* de [__game__](https://git.unistra.fr/auskour/t3-mod-23-b/-/tree/main/Game?ref_type=heads)
-- Exécutez *Amboise_Simulator.exe* en double cliquant dessus
+- Effectuez un *git clone* de [__Game__](https://git.unistra.fr/auskour/t3-mod-23-b/-/tree/main/Game?ref_type=heads)
+- Exécutez *LaVoieRoyale.exe* en double cliquant dessus
 
 ### Sous Linux
-- Effectuez un *git clone* de [__game__](https://git.unistra.fr/auskour/t3-mod-23-b/-/tree/main/Game?ref_type=heads)
+- Effectuez un *git clone* de [__Game__](https://git.unistra.fr/auskour/t3-mod-23-b/-/tree/main/Game?ref_type=heads)
 - Entrez les commandes suivante dans un terminal :
-    - chmod 777 *Amboise_Simulator.x86_64*
-    - *./Amboise_Simulator.x86_64*
+    - chmod 777 *LaVoieRoyale.x86_64*
+    - *./LaVoieRoyale.x86_64*
 
 ## Captures d'écran
 
+![Capture d'écran du Menu d'Accueil](./ScreenShots/screenMenuAccueil.png)
+![Capture d'écran de la Forge](./ScreenShots/screenForge.png)
+![Capture d'écran de l'écran dezoomé](./ScreenShots/screenDeZoom.png)
+![Capture d'écran de l'Inventaire](./ScreenShots/screenInventaire.png)
+![Capture d'écran de l'écran Gagné](./ScreenShots/screenWin.png)
+![Capture d'écran de l'écran Perdu](./ScreenShots/screenLose.png)
 
 
 ## Liens utiles:
