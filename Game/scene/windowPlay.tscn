@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dvhmjb44mbg2x" path="res://scene/map.tscn" id="2_cubkw"]
 [ext_resource type="PackedScene" uid="uid://bndpjvgumg6m4" path="res://scene/castle.tscn" id="3_mp580"]
 [ext_resource type="PackedScene" uid="uid://drjilsvtwpwyj" path="res://scene/fields.tscn" id="4_1sn7g"]
-[ext_resource type="PackedScene" uid="uid://dgncvdemtyg47" path="res://scene/PNJ.tscn" id="5_e6mf4"]
+[ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/PNJ.tscn" id="5_e6mf4"]
 [ext_resource type="PackedScene" uid="uid://bi764xd14c4rj" path="res://scene/anime_player.tscn" id="6_58hb1"]
 [ext_resource type="PackedScene" uid="uid://0e0qu8v4n52w" path="res://scene/HUD.tscn" id="7_rta0t"]
 
@@ -20,9 +20,6 @@ position = Vector2(1088, 131)
 [node name="Fields" parent="." instance=ExtResource("4_1sn7g")]
 position = Vector2(-48, 27)
 
-[node name="PNJ" parent="." instance=ExtResource("5_e6mf4")]
-position = Vector2(479, 483)
-
 [node name="player" parent="." instance=ExtResource("6_58hb1")]
 position = Vector2(585, 314)
 
@@ -33,3 +30,30 @@ position = Vector2(1633, 607)
 
 [node name="roi" parent="." instance=ExtResource("5_e6mf4")]
 position = Vector2(1729, 607)
+
+[node name="enfant" parent="." instance=ExtResource("5_e6mf4")]
+position = Vector2(481, 479)
+
+[node name="arnaqueur" parent="." instance=ExtResource("5_e6mf4")]
+position = Vector2(417, 191)
+
+[node name="notaire" parent="." instance=ExtResource("5_e6mf4")]
+position = Vector2(481, 767)
+
+[node name="paysan" parent="." instance=ExtResource("5_e6mf4")]
+position = Vector2(257, 383)
+
+[node name="tavernier" parent="." instance=ExtResource("5_e6mf4")]
+position = Vector2(513, 351)
+
+[node name="professeur" parent="." instance=ExtResource("5_e6mf4")]
+position = Vector2(1345, 735)
+
+[node name="mamie" parent="." instance=ExtResource("5_e6mf4")]
+position = Vector2(1089, 383)
+
+[node name="maire" parent="." instance=ExtResource("5_e6mf4")]
+position = Vector2(1313, 479)
+
+[node name="pecheur" parent="." instance=ExtResource("5_e6mf4")]
+position = Vector2(673, 1055)
