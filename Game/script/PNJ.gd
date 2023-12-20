@@ -2,11 +2,10 @@ extends CharacterBody2D
 
 var player
 var player_in_chat_zone = false
-var nb_item = 0
 
 func _process(delta):
 	if Input.is_action_just_pressed("ui_accept") and player_in_chat_zone:	
-		match nb_item:
+		match get_parent().inventaire.size():
 			0:
 				get_parent().ajouteItem("épée")
 			1:
@@ -31,3 +30,5 @@ func _on_dialogue_body_exited(body):
 	if body.has_method("player"):
 		player_in_chat_zone = false
 		$sprQuest.frame = 0
+		
+
