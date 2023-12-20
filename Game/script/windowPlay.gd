@@ -11,8 +11,7 @@ func _ready():
 		get_parent().gagne("Vous êtes le fils ou la fille du roi")
 	elif(ranNumber <= 10):
 		get_parent().perdu("Vous êtes une fille, vous ne pouvez donc pas devenir noble")
-	$princesse/sprPNJ.frame = 0
-	$roi/sprPNJ.frame = 1
+	setPNJ()
 
 func _process(delta):
 	$HUD/prestige.value = prestige
@@ -59,3 +58,16 @@ func ajouteArgent():
 	var gain = rng.randi_range(1, 10)
 	print("+%d argent" % gain)
 	argent += gain
+
+func setPNJ():
+	$princesse/sprPNJ.frame = 0
+	$roi/sprPNJ.frame = 1
+	$arnaqueur/sprPNJ.frame = 2
+	$notaire/sprPNJ.frame = 3
+	$enfant/sprPNJ.frame = 4
+	$paysan/sprPNJ.frame = 5
+	$tavernier/sprPNJ.frame = 6
+	$professeur/sprPNJ.frame = 7
+	$mamie/sprPNJ.frame = 8
+	$maire/sprPNJ.frame = 9
+	$pecheur/sprPNJ.frame = 10
