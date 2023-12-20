@@ -3,9 +3,10 @@ extends Node2D
 var window
 
 func _ready():
-	window = preload("res://scene/windowStart.tscn").instantiate()
+	window = load("res://scene/windowStart.tscn").instantiate()
 	add_child(window)
-
+		
+		
 func nouvellePartie():
 	window.queue_free()
 	window = preload("res://scene/windowPlay.tscn").instantiate()

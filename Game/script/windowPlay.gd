@@ -21,39 +21,47 @@ func _process(delta):
 	if Input.is_key_pressed(KEY_E):
 		get_parent().perdu()
 
-func ajouteItem(item):
-	inventaire.append(item)
-	print("+1 %s" % item)
-	prestige += 10
-	match item:
-		"épée":
+func ajouteItem():
+	var item
+	match inventaire.size():
+		0:
+			item = "épée"
 			$HUD/item/sprepee.frame -= 1
-		"pantalon":
+		1:
+			item = "pantalon"
 			$HUD/item/sprpantalon.frame -= 1
 			$player.sprite = load("res://images/persoPantalon.png")
 			$HUD/item/perso/sprperso.set_texture($player.sprite)
 			$player/sprPerso.set_texture($player.sprite)
-		"bottes":
+		2:
+			item = "bottes"
 			$HUD/item/sprbottes.frame -= 1
 			$player.sprite = load("res://images/persoBottes.png")
 			$HUD/item/perso/sprperso.set_texture($player.sprite)
 			$player/sprPerso.set_texture($player.sprite)
-		"chemise":
+		3:
+			item = "chemise"
 			$HUD/item/sprchemise.frame -= 1
 			$player.sprite = load("res://images/persoChemise.png")
 			$HUD/item/perso/sprperso.set_texture($player.sprite)
 			$player/sprPerso.set_texture($player.sprite)
-		"cape":
+		4:
+			item = "cape"
 			$HUD/item/sprcape.frame -= 1
 			$player.sprite = load("res://images/persoCape.png")
 			$HUD/item/perso/sprperso.set_texture($player.sprite)
 			$player/sprPerso.set_texture($player.sprite)
-		"chapeau":
+		5:
+			item = "chapeau"
 			$HUD/item/sprchapeau.frame -= 1
 			$player.sprite = load("res://images/persoChapeau.png")
 			$HUD/item/perso/sprperso.set_texture($player.sprite)
 			$player/sprPerso.set_texture($player.sprite)
-	
+	if(inventaire.size() <6):
+		inventaire.append(item)
+		print("+1 %s" % item)
+		prestige += 10
+		
 func ajouteArgent():
 	var gain = rng.randi_range(1, 10)
 	print("+%d argent" % gain)
