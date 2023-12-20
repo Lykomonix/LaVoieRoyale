@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://bi764xd14c4rj"]
 
 [ext_resource type="Script" path="res://script/anime_player.gd" id="1_7mkha"]
-[ext_resource type="Texture2D" uid="uid://b1r4qqmqh6tfx" path="res://images/here.png" id="3_alqwo"]
+[ext_resource type="Texture2D" uid="uid://d08tv44tgdh86" path="res://images/here.png" id="3_alqwo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pmudh"]
 size = Vector2(20, 13)
@@ -119,11 +119,11 @@ motion_mode = 1
 script = ExtResource("1_7mkha")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 24.5)
+position = Vector2(9.53674e-07, -0.5)
 shape = SubResource("RectangleShape2D_pmudh")
 
 [node name="sprPerso" type="Sprite2D" parent="."]
-position = Vector2(-9.53674e-07, 11)
+position = Vector2(0, -14)
 scale = Vector2(0.65625, 0.65625)
 hframes = 13
 vframes = 21
@@ -135,6 +135,7 @@ libraries = {
 }
 
 [node name="Camera" type="Camera2D" parent="."]
+position = Vector2(9.53674e-07, -25)
 zoom = Vector2(4, 4)
 
 [node name="sprHere" type="Sprite2D" parent="."]
