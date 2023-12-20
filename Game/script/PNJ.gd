@@ -2,22 +2,14 @@ extends CharacterBody2D
 
 var player
 var player_in_chat_zone = false
+var to_start = false
 
-func _process(delta):
-	if Input.is_action_just_pressed("ui_accept") and player_in_chat_zone:	
-		match get_parent().inventaire.size():
-			0:
-				get_parent().ajouteItem("épée")
-			1:
-				get_parent().ajouteItem("pantalon")
-			2:
-				get_parent().ajouteItem("bottes")
-			3:
-				get_parent().ajouteItem("chemise")
-			4:
-				get_parent().ajouteItem("cape")
-			5:
-				get_parent().ajouteItem("chapeau")
+func _process(_delta):
+	if Input.is_action_just_pressed("ui_accept") and player_in_chat_zone:
+		to_start=true
+	if to_start:
+		$Dialogue.start()
+		to_start=false
 
 func _on_dialogue_body_entered(body):
 	if body.has_method("player"):

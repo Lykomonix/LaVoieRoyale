@@ -3,4 +3,5 @@
 [ext_resource type="Script" path="res://script/laVoieRoyale.gd" id="1_hgytm"]
 
 [node name="laVoieRoyale" type="Node2D"]
+position = Vector2(1, 0)
 script = ExtResource("1_hgytm")
