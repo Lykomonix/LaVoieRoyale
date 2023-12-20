@@ -1,14 +1,20 @@
-[gd_scene load_steps=6 format=3 uid="uid://dgncvdemtyg47"]
+[gd_scene load_steps=8 format=3 uid="uid://bji4ayw5rnd3b"]
 
 [ext_resource type="Script" path="res://script/PNJ.gd" id="1_lqbls"]
+[ext_resource type="Texture2D" uid="uid://bktfh2jtllxty" path="res://icon.svg" id="2_yi6ab"]
+[ext_resource type="Script" path="res://scene/sprPNJ.gd" id="3_54iex"]
+[ext_resource type="Texture2D" uid="uid://bioqpley8ogfl" path="res://images/quest.png" id="3_ghabv"]
+[ext_resource type="PackedScene" uid="uid://c6vb22n2hgl3s" path="res://scene/dialogue.tscn" id="4_jpljy"]
 [ext_resource type="Texture2D" uid="uid://dnneijtc1jim2" path="res://images/PNJ.png" id="2_k4b8w"]
-[ext_resource type="Texture2D" uid="uid://65eeln50kkw6" path="res://images/quest.png" id="3_ghabv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_36ofq"]
 size = Vector2(40, 26)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_d65sc"]
 radius = 32.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_36ofq"]
+size = Vector2(64, 64)
 
 [node name="PNJ" type="CharacterBody2D"]
 script = ExtResource("1_lqbls")
@@ -22,6 +28,7 @@ shape = SubResource("RectangleShape2D_36ofq")
 position = Vector2(0, -10)
 scale = Vector2(0.656, 0.656)
 texture = ExtResource("2_k4b8w")
+script = ExtResource("3_54iex")
 vframes = 2
 
 [node name="sprQuest" type="Sprite2D" parent="."]
@@ -30,11 +37,20 @@ scale = Vector2(0.1, 0.1)
 texture = ExtResource("3_ghabv")
 vframes = 2
 
-[node name="dialogue" type="Area2D" parent="."]
+[node name="Dialogue" parent="." instance=ExtResource("4_jpljy")]
+offset_top = -25.0
+offset_bottom = -25.0
 
-[node name="colDialogue" type="CollisionShape2D" parent="dialogue"]
+[node name="zoneDialogue" type="Area2D" parent="Dialogue"]
+position = Vector2(0, 25)
+
+[node name="colDialogue" type="CollisionShape2D" parent="Dialogue/zoneDialogue"]
 position = Vector2(-1, 2)
 shape = SubResource("CircleShape2D_d65sc")
 
-[connection signal="body_entered" from="dialogue" to="." method="_on_dialogue_body_entered"]
-[connection signal="body_exited" from="dialogue" to="." method="_on_dialogue_body_exited"]
+[node name="colPNJ" type="CollisionShape2D" parent="."]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_36ofq")
+
+[connection signal="body_entered" from="Dialogue/zoneDialogue" to="." method="_on_dialogue_body_entered"]
+[connection signal="body_exited" from="Dialogue/zoneDialogue" to="." method="_on_dialogue_body_exited"]
