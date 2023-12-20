@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dvhmjb44mbg2x" path="res://scene/map.tscn" id="2_cubkw"]
 [ext_resource type="PackedScene" uid="uid://bndpjvgumg6m4" path="res://scene/castle.tscn" id="3_mp580"]
 [ext_resource type="PackedScene" uid="uid://drjilsvtwpwyj" path="res://scene/fields.tscn" id="4_1sn7g"]
-[ext_resource type="PackedScene" uid="uid://dgncvdemtyg47" path="res://scene/PNJ.tscn" id="5_e6mf4"]
+[ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/PNJ.tscn" id="5_e6mf4"]
 [ext_resource type="PackedScene" uid="uid://bi764xd14c4rj" path="res://scene/anime_player.tscn" id="6_58hb1"]
 [ext_resource type="PackedScene" uid="uid://0e0qu8v4n52w" path="res://scene/HUD.tscn" id="7_rta0t"]
 
