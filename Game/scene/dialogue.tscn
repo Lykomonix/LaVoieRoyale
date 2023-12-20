@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c6vb22n2hgl3s"]
 
 [ext_resource type="Script" path="res://Dialogue.gd" id="1_kmrs4"]
-[ext_resource type="Texture2D" uid="uid://cnjkcyggexs6n" path="res://images/dialogue.png" id="2_n5o6m"]
+[ext_resource type="Texture2D" uid="uid://bhr2keyj4mwbg" path="res://images/dialogue.png" id="2_n5o6m"]
 
 [node name="Dialogue" type="Control"]
 layout_mode = 3
@@ -28,7 +28,7 @@ patch_margin_bottom = 20
 layout_mode = 0
 offset_left = 4.0
 offset_top = 2.0
-offset_right = 81.0
+offset_right = 181.0
 offset_bottom = 29.0
 scale = Vector2(0.8, 0.8)
 text = "Name :"

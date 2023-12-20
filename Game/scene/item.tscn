@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://brgt2hmis76a2"]
 
 [ext_resource type="Script" path="res://script/item.gd" id="1_a02la"]
-[ext_resource type="Texture2D" uid="uid://crjipy7o8ym65" path="res://images/items.png" id="3_vhsbg"]
+[ext_resource type="Texture2D" uid="uid://cp55w7ic1weyv" path="res://images/items.png" id="3_vhsbg"]
 
 [node name="item" type="ColorRect"]
 custom_minimum_size = Vector2(1200, 800)
@@ -18,7 +18,7 @@ offset_right = 1120.0
 offset_bottom = 731.0
 
 [node name="sprperso" type="Sprite2D" parent="perso"]
-position = Vector2(124.5, 123.5)
+position = Vector2(299, 336)
 scale = Vector2(10, 10)
 hframes = 13
 vframes = 21
