@@ -1,0 +1,22 @@
+[
+	[
+		{
+			"name": "Henri",
+			"text": "Je suis un paysan !"
+		},
+		{
+			"name": "Henri",
+			"text": "Aide-moi à récolter le champ, j'irai tout revendre en ville !"
+		}
+	],
+	[
+		{
+			"name": "Bonjour",
+			"text": "Youhou !!!"
+		},
+		{
+			"name": "Bob le méchant",
+			"text": "Je suis vraiment méchant"
+		}
+	]
+]
