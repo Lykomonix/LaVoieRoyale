@@ -1,11 +1,11 @@
 [gd_scene load_steps=8 format=3 uid="uid://0e0qu8v4n52w"]
 
-[ext_resource type="Texture2D" uid="uid://bptr7pamvbvv3" path="res://images/zoin.png" id="1_ctawu"]
-[ext_resource type="Script" path="res://Script/HUD.gd" id="1_ey6y8"]
-[ext_resource type="Texture2D" uid="uid://braufjtb1sko2" path="res://images/sacs.png" id="2_hq0jn"]
+[ext_resource type="Texture2D" uid="uid://ck87cesdf432d" path="res://images/zoin.png" id="1_ctawu"]
+[ext_resource type="Script" path="res://script/HUD.gd" id="1_ey6y8"]
+[ext_resource type="Texture2D" uid="uid://bno4gc4w5jrau" path="res://images/sacs.png" id="2_hq0jn"]
 [ext_resource type="Script" path="res://script/sac.gd" id="3_akp2h"]
 [ext_resource type="PackedScene" uid="uid://brgt2hmis76a2" path="res://scene/item.tscn" id="4_6jd3g"]
-[ext_resource type="Texture2D" uid="uid://cmyhawbf7nypb" path="res://images/zoom.png" id="6_04qre"]
+[ext_resource type="Texture2D" uid="uid://ddnby8anu6e7u" path="res://images/zoom.png" id="6_04qre"]
 [ext_resource type="Script" path="res://script/sprZoom.gd" id="7_kspe8"]
 
 [node name="HUD" type="CanvasLayer"]
