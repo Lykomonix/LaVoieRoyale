@@ -24,11 +24,13 @@ On débute la partie en tant qu'habitant Amboisien du tiers-état. L'objectif du
 ## Procédure d'installation et d'exécution
 ### Sous windows
 - Effectuez un *git clone* de [__Game__](https://git.unistra.fr/auskour/t3-mod-23-b/-/tree/main/Game?ref_type=heads)
-- Exécutez *LaVoieRoyale.exe* en double cliquant dessus
+- Rendez-vous dans le dossier Release
+- Exécutez *LaVoieRoyale - Setup.exe* en double cliquant dessus
 
 ### Sous Linux
 - Effectuez un *git clone* de [__Game__](https://git.unistra.fr/auskour/t3-mod-23-b/-/tree/main/Game?ref_type=heads)
 - Entrez les commandes suivante dans un terminal :
+    - cd Release
     - chmod 777 *LaVoieRoyale.x86_64*
     - *./LaVoieRoyale.x86_64*
 
