@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cbde4ncinxdu2"]
+[gd_scene load_steps=13 format=3 uid="uid://cbde4ncinxdu2"]
 
 [ext_resource type="PackedScene" uid="uid://bj1g5xutg7yxw" path="res://scene/newMap.tscn" id="1_1mjiq"]
 [ext_resource type="Script" path="res://script/windowPlay.gd" id="1_qvymn"]
@@ -10,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://c8nap5w6imh4a" path="res://scene/tomate.tscn" id="7_7ycci"]
 [ext_resource type="PackedScene" uid="uid://c1k8cgd83boph" path="res://scene/bouteille.tscn" id="9_l6bsy"]
 [ext_resource type="PackedScene" uid="uid://b0jxn6gi18sow" path="res://scene/mamie.tscn" id="10_osvml"]
+[ext_resource type="PackedScene" uid="uid://b7liunjsqsq2b" path="res://scene/arnaqueur.tscn" id="12_0eq63"]
+[ext_resource type="PackedScene" uid="uid://22jceekt7tlr" path="res://scene/notaire.tscn" id="12_ftxdc"]
 
 [node name="windowTest" type="Node2D"]
 y_sort_enabled = true
@@ -29,17 +31,17 @@ position = Vector2(1779, 491)
 [node name="enfant" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1079, 642)
 
-[node name="arnaqueur" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(1160, 198)
-
-[node name="notaire" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(1120, 449)
-
 [node name="professeur" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1112, 881)
 
 [node name="maire" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(822, 882)
+
+[node name="professeur2" parent="." instance=ExtResource("3_0xtay")]
+position = Vector2(1220, 837)
+
+[node name="maire2" parent="." instance=ExtResource("3_0xtay")]
+position = Vector2(795, 925)
 
 [node name="pecheur" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(446, 984)
@@ -54,6 +56,7 @@ position = Vector2(275, 584)
 position = Vector2(409, 611)
 
 [node name="HUD" parent="." instance=ExtResource("5_n8r3j")]
+visible = false
 
 [node name="Timer" type="Timer" parent="."]
 process_callback = 0
@@ -65,5 +68,11 @@ position = Vector2(801, 383)
 
 [node name="mamie" parent="." instance=ExtResource("10_osvml")]
 position = Vector2(785, 687)
+
+[node name="notaire" parent="." instance=ExtResource("12_ftxdc")]
+position = Vector2(1157, 575)
+
+[node name="arnaqueur" parent="." instance=ExtResource("12_0eq63")]
+position = Vector2(1165, 170)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

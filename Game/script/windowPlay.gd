@@ -2,7 +2,7 @@ extends Node2D
 
 var prestige = 0
 var inventaire = []
-var argent = 0
+var argent = 20
 var rng = RandomNumberGenerator.new()
 
 func _ready():
@@ -69,8 +69,8 @@ func setPNJ():
 #	set image perso
 	$roi/sprPNJ.frame = 0
 	$princesse/sprPNJ.frame = 1
-	$arnaqueur/sprPNJ.frame = 2
-	$notaire/sprPNJ.frame = 3
+	
+	
 	$enfant/sprPNJ.frame = 4
 	# $paysan/sprPNJ.frame = 5
 	# $tavernier/sprPNJ.frame = 6
@@ -80,9 +80,9 @@ func setPNJ():
 	$pecheur/sprPNJ.frame = 10
 #	set le type
 	$roi.set_type(1)
-	$princesse.set_type()
-	$arnaqueur.set_type(1)
-	$notaire.set_type(1)
+	$princesse.set_type(0)
+	# $arnaqueur/pnj.set_type(1)
+	# $notaire/pnj.set_type(1)
 	$enfant.set_type(1)
 	# $paysan.set_type(2)
 	#$tavernier.set_type(2)
@@ -100,9 +100,8 @@ func finAlliance():
 	
 func finPossession(vendeur):
 	if vendeur == "notaire":
-		get_parent().gagne("Vous avez acheter la taverne, victoire par possession")
+		get_parent().gagne("Vous avez acheter les champs, victoire par possession")
 	else:
-
 		get_parent().perdu("Vous avez acheter un lac qui n'a pas de valeur")
 	
 func finNaissance():
