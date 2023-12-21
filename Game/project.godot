@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Game"
-run/main_scene="res://scene/LaVoieRoyale.tscn"
-config/features=PackedStringArray("4.1", "Forward Plus")
+run/main_scene="res://scene/laVoieRoyale.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://logoT3.png"
 config/windows_native_icon="res://logoT3.ico"
 
