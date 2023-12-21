@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cbde4ncinxdu2"]
+[gd_scene load_steps=18 format=3 uid="uid://cbde4ncinxdu2"]
 
 [ext_resource type="PackedScene" uid="uid://bj1g5xutg7yxw" path="res://scene/newMap.tscn" id="1_1mjiq"]
 [ext_resource type="Script" path="res://script/windowPlay.gd" id="1_qvymn"]
@@ -6,16 +6,17 @@
 [ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/personnages/PNJ.tscn" id="3_0xtay"]
 [ext_resource type="PackedScene" uid="uid://g4c2gnepeixs" path="res://scene/personnages/tavernier.tscn" id="5_dchvm"]
 [ext_resource type="PackedScene" uid="uid://0e0qu8v4n52w" path="res://scene/HUD.tscn" id="5_n8r3j"]
-[ext_resource type="PackedScene" uid="uid://bjmclo0n4arp0" path="res://scene/personnages/paysan.tscn" id="6_mpt20"]
-[ext_resource type="PackedScene" uid="uid://c8nap5w6imh4a" path="res://scene/objets/tomate.tscn" id="7_7ycci"]
-[ext_resource type="PackedScene" uid="uid://c1k8cgd83boph" path="res://scene/objets/bouteille.tscn" id="9_l6bsy"]
+[ext_resource type="PackedScene" uid="uid://bjmclo0n4arp0" path="res://scene/paysan.tscn" id="6_mpt20"]
+[ext_resource type="PackedScene" uid="uid://c8nap5w6imh4a" path="res://scene/tomate.tscn" id="7_7ycci"]
+[ext_resource type="PackedScene" uid="uid://c1k8cgd83boph" path="res://scene/bouteille.tscn" id="9_l6bsy"]
 [ext_resource type="PackedScene" uid="uid://b0jxn6gi18sow" path="res://scene/personnages/mamie.tscn" id="10_osvml"]
 [ext_resource type="PackedScene" uid="uid://b7liunjsqsq2b" path="res://scene/personnages/arnaqueur.tscn" id="12_0eq63"]
-[ext_resource type="PackedScene" uid="uid://22jceekt7tlr" path="res://scene/personnages/notaire.tscn" id="12_ftxdc"]
+[ext_resource type="PackedScene" uid="uid://22jceekt7tlr" path="res://scene/notaire.tscn" id="12_ftxdc"]
 [ext_resource type="PackedScene" uid="uid://cculv5ekomob8" path="res://scene/personnages/pecheur.tscn" id="13_34w7g"]
 [ext_resource type="PackedScene" uid="uid://dgv8aek25rpeo" path="res://scene/objets/canne_a_peche.tscn" id="14_757vo"]
 [ext_resource type="PackedScene" uid="uid://c0vlb6bbpdsgb" path="res://scene/personnages/maire.tscn" id="15_5f01b"]
 [ext_resource type="PackedScene" uid="uid://cxwtueri4hmki" path="res://scene/personnages/professeur.tscn" id="16_cpiwh"]
+[ext_resource type="PackedScene" uid="uid://fyvnvam4w16s" path="res://scene/roi.tscn" id="17_1joij"]
 
 [node name="windowTest" type="Node2D"]
 y_sort_enabled = true
@@ -28,9 +29,6 @@ position = Vector2(871, 347)
 
 [node name="princesse" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1779, 557)
-
-[node name="roi" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(1779, 491)
 
 [node name="enfant" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1079, 642)
@@ -49,15 +47,6 @@ position = Vector2(649, 983)
 
 [node name="tomate" parent="." instance=ExtResource("7_7ycci")]
 position = Vector2(130, 782)
-
-[node name="tavernier" parent="." instance=ExtResource("5_dchvm")]
-position = Vector2(833, 291)
-
-[node name="paysan" parent="." instance=ExtResource("6_mpt20")]
-position = Vector2(275, 584)
-
-[node name="tomate" parent="." instance=ExtResource("7_7ycci")]
-position = Vector2(409, 611)
 
 [node name="HUD" parent="." instance=ExtResource("5_n8r3j")]
 visible = false
@@ -84,5 +73,8 @@ position = Vector2(783, 871)
 
 [node name="professeur" parent="." instance=ExtResource("16_cpiwh")]
 position = Vector2(1149, 860)
+
+[node name="roi" parent="." instance=ExtResource("17_1joij")]
+position = Vector2(1780, 479)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

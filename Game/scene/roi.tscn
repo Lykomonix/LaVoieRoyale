@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://fyvnvam4w16s"]
 
 [ext_resource type="Script" path="res://script/roi.gd" id="1_kimjs"]
-[ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/PNJ.tscn" id="1_o1syp"]
+[ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/personnages/PNJ.tscn" id="1_o1syp"]
 
 [node name="roi" type="Node2D"]
 script = ExtResource("1_kimjs")
