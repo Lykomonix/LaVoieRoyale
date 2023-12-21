@@ -1,17 +1,19 @@
-[gd_scene load_steps=13 format=3 uid="uid://cbde4ncinxdu2"]
+[gd_scene load_steps=15 format=3 uid="uid://cbde4ncinxdu2"]
 
 [ext_resource type="PackedScene" uid="uid://bj1g5xutg7yxw" path="res://scene/newMap.tscn" id="1_1mjiq"]
 [ext_resource type="Script" path="res://script/windowPlay.gd" id="1_qvymn"]
 [ext_resource type="PackedScene" uid="uid://bi764xd14c4rj" path="res://scene/anime_player.tscn" id="2_cf20v"]
 [ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/PNJ.tscn" id="3_0xtay"]
-[ext_resource type="PackedScene" uid="uid://g4c2gnepeixs" path="res://scene/tavernier.tscn" id="5_dchvm"]
+[ext_resource type="PackedScene" uid="uid://5diacyy0t3ti" path="res://scene/tavernier.tscn" id="5_dchvm"]
 [ext_resource type="PackedScene" uid="uid://0e0qu8v4n52w" path="res://scene/HUD.tscn" id="5_n8r3j"]
-[ext_resource type="PackedScene" uid="uid://bjmclo0n4arp0" path="res://scene/paysan.tscn" id="6_mpt20"]
-[ext_resource type="PackedScene" uid="uid://c8nap5w6imh4a" path="res://scene/tomate.tscn" id="7_7ycci"]
-[ext_resource type="PackedScene" uid="uid://c1k8cgd83boph" path="res://scene/bouteille.tscn" id="9_l6bsy"]
-[ext_resource type="PackedScene" uid="uid://b0jxn6gi18sow" path="res://scene/mamie.tscn" id="10_osvml"]
-[ext_resource type="PackedScene" uid="uid://b7liunjsqsq2b" path="res://scene/arnaqueur.tscn" id="12_0eq63"]
-[ext_resource type="PackedScene" uid="uid://22jceekt7tlr" path="res://scene/notaire.tscn" id="12_ftxdc"]
+[ext_resource type="PackedScene" path="res://scene/paysan.tscn" id="6_mpt20"]
+[ext_resource type="PackedScene" path="res://scene/tomate.tscn" id="7_7ycci"]
+[ext_resource type="PackedScene" path="res://scene/bouteille.tscn" id="9_l6bsy"]
+[ext_resource type="PackedScene" uid="uid://cunetlolf44hd" path="res://scene/mamie.tscn" id="10_osvml"]
+[ext_resource type="PackedScene" uid="uid://bakp51n5kvime" path="res://scene/arnaqueur.tscn" id="12_0eq63"]
+[ext_resource type="PackedScene" path="res://scene/notaire.tscn" id="12_ftxdc"]
+[ext_resource type="PackedScene" uid="uid://fyvnvam4w16s" path="res://scene/roi.tscn" id="13_s6tdy"]
+[ext_resource type="PackedScene" uid="uid://cmpq7w7kc46a" path="res://scene/enfant.tscn" id="14_ssoau"]
 
 [node name="windowTest" type="Node2D"]
 y_sort_enabled = true
@@ -25,23 +27,11 @@ position = Vector2(871, 347)
 [node name="princesse" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1779, 557)
 
-[node name="roi" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(1779, 491)
-
-[node name="enfant" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(1079, 642)
-
 [node name="professeur" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1112, 881)
 
 [node name="maire" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(822, 882)
-
-[node name="professeur2" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(1220, 837)
-
-[node name="maire2" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(795, 925)
 
 [node name="pecheur" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(446, 984)
@@ -74,5 +64,11 @@ position = Vector2(1157, 575)
 
 [node name="arnaqueur" parent="." instance=ExtResource("12_0eq63")]
 position = Vector2(1165, 170)
+
+[node name="roi" parent="." instance=ExtResource("13_s6tdy")]
+position = Vector2(1782, 484)
+
+[node name="enfant" parent="." instance=ExtResource("14_ssoau")]
+position = Vector2(930, 571)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
