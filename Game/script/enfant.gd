@@ -2,11 +2,11 @@ extends Node2D
 
 var state = 0
 
-var dialogue_path = "res://dialogue/roi.json"
+var dialogue_path = "res://dialogue/enfant.json"
 
 func _ready():
-	$PNJ/sprPNJ.frame = 0
-	$PNJ.set_type(2)
+	$PNJ/sprPNJ.frame = 4
+	$PNJ.set_type(1)
 	$PNJ/Dialogue.dialogue_path = dialogue_path
 	
 func _process(delta):
@@ -22,4 +22,4 @@ func _process(delta):
 			state +=1
 		else:
 			$PNJ/Dialogue.next_script()
-			get_parent().finAlliance()
+			get_parent().finMaire()

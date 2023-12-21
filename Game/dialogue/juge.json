@@ -1,28 +1,28 @@
 [
 	[
 		{
-			"name": "Juge",
-			"text": "Bonjour, excusez-moi de vous déranger, mais j'ai un problème."
+			"name": "enfant",
+			"text": "Tu veux épouser ma fille ?"
 		},
 		{
-			"name": "Amboisien",
-			"text": "Bonjour Monsieur le Juge, que puis-je faire pour vous ?"
+			"name": "enfant",
+			"text": "tu te sens capable éblouir ma fille"
 		},
 		{
-			"name": "Juge",
-			"text": "Il y a eu un vol de preuves dans une affaire en cours."
-		},
+			"name": "enfant",
+			"text": "Il faut que je vous offre quelque chose !"
+		}
+	],
+	[
 		{
-			"name": "Amboisien",
-			"text": "Ah, c'est grave ça ! Je vais mener mon enquête."
-		},
+			"name": "enfant",
+			"text": "Voyons ce qu'elle en pense"
+		}
+	],
+	[
 		{
-			"name": "Juge",
-			"text": "Pouvez-vous retrouver ces preuves pour moi ?"
-		},
-		{
-			"name": "Amboisien",
-			"text": "Bien sûr, je vais faire ce que je peux."
+			"name": "enfant",
+			"text": "N'hésitez pas à repasser me voir dès que vous le souhaitez"
 		}
 	]
 ]

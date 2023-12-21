@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cbde4ncinxdu2"]
+[gd_scene load_steps=15 format=3 uid="uid://cbde4ncinxdu2"]
 
 [ext_resource type="PackedScene" uid="uid://bj1g5xutg7yxw" path="res://scene/newMap.tscn" id="1_1mjiq"]
 [ext_resource type="Script" path="res://script/windowPlay.gd" id="1_qvymn"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://bakp51n5kvime" path="res://scene/arnaqueur.tscn" id="12_0eq63"]
 [ext_resource type="PackedScene" path="res://scene/notaire.tscn" id="12_ftxdc"]
 [ext_resource type="PackedScene" uid="uid://fyvnvam4w16s" path="res://scene/roi.tscn" id="13_s6tdy"]
+[ext_resource type="PackedScene" uid="uid://cmpq7w7kc46a" path="res://scene/enfant.tscn" id="14_ssoau"]
 
 [node name="windowTest" type="Node2D"]
 y_sort_enabled = true
@@ -26,20 +27,11 @@ position = Vector2(871, 347)
 [node name="princesse" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1779, 557)
 
-[node name="enfant" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(1079, 642)
-
 [node name="professeur" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1112, 881)
 
 [node name="maire" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(822, 882)
-
-[node name="professeur2" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(1220, 837)
-
-[node name="maire2" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(795, 925)
 
 [node name="pecheur" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(446, 984)
@@ -75,5 +67,8 @@ position = Vector2(1165, 170)
 
 [node name="roi" parent="." instance=ExtResource("13_s6tdy")]
 position = Vector2(1782, 484)
+
+[node name="enfant" parent="." instance=ExtResource("14_ssoau")]
+position = Vector2(930, 571)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
