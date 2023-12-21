@@ -1,12 +1,15 @@
-[gd_scene load_steps=8 format=3 uid="uid://cbde4ncinxdu2"]
+[gd_scene load_steps=11 format=3 uid="uid://cbde4ncinxdu2"]
 
 [ext_resource type="PackedScene" uid="uid://bj1g5xutg7yxw" path="res://scene/newMap.tscn" id="1_1mjiq"]
 [ext_resource type="Script" path="res://script/windowPlay.gd" id="1_qvymn"]
 [ext_resource type="PackedScene" uid="uid://bi764xd14c4rj" path="res://scene/anime_player.tscn" id="2_cf20v"]
 [ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/PNJ.tscn" id="3_0xtay"]
+[ext_resource type="PackedScene" uid="uid://g4c2gnepeixs" path="res://scene/tavernier.tscn" id="5_dchvm"]
 [ext_resource type="PackedScene" uid="uid://0e0qu8v4n52w" path="res://scene/HUD.tscn" id="5_n8r3j"]
 [ext_resource type="PackedScene" uid="uid://bjmclo0n4arp0" path="res://scene/paysan.tscn" id="6_mpt20"]
 [ext_resource type="PackedScene" uid="uid://c8nap5w6imh4a" path="res://scene/tomate.tscn" id="7_7ycci"]
+[ext_resource type="PackedScene" uid="uid://c1k8cgd83boph" path="res://scene/bouteille.tscn" id="9_l6bsy"]
+[ext_resource type="PackedScene" uid="uid://b0jxn6gi18sow" path="res://scene/mamie.tscn" id="10_osvml"]
 
 [node name="windowTest" type="Node2D"]
 y_sort_enabled = true
@@ -15,7 +18,7 @@ script = ExtResource("1_qvymn")
 [node name="newMap" parent="." instance=ExtResource("1_1mjiq")]
 
 [node name="player" parent="." instance=ExtResource("2_cf20v")]
-position = Vector2(435, 535)
+position = Vector2(871, 347)
 
 [node name="princesse" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1779, 557)
@@ -32,20 +35,23 @@ position = Vector2(1160, 198)
 [node name="notaire" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1120, 449)
 
-[node name="tavernier" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(833, 287)
-
 [node name="professeur" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1112, 881)
-
-[node name="mamie" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(786, 685)
 
 [node name="maire" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(822, 882)
 
 [node name="pecheur" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(446, 984)
+
+[node name="tavernier" parent="." instance=ExtResource("5_dchvm")]
+position = Vector2(833, 291)
+
+[node name="paysan" parent="." instance=ExtResource("6_mpt20")]
+position = Vector2(275, 584)
+
+[node name="tomate" parent="." instance=ExtResource("7_7ycci")]
+position = Vector2(409, 611)
 
 [node name="HUD" parent="." instance=ExtResource("5_n8r3j")]
 
@@ -54,10 +60,10 @@ process_callback = 0
 wait_time = 300.0
 one_shot = true
 
-[node name="paysan" parent="." instance=ExtResource("6_mpt20")]
-position = Vector2(275, 584)
+[node name="bouteille" parent="." instance=ExtResource("9_l6bsy")]
+position = Vector2(801, 383)
 
-[node name="tomate" parent="." instance=ExtResource("7_7ycci")]
-position = Vector2(409, 611)
+[node name="mamie" parent="." instance=ExtResource("10_osvml")]
+position = Vector2(785, 687)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

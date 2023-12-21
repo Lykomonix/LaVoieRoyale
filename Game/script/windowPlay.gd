@@ -73,9 +73,9 @@ func setPNJ():
 	$notaire/sprPNJ.frame = 3
 	$enfant/sprPNJ.frame = 4
 	# $paysan/sprPNJ.frame = 5
-	$tavernier/sprPNJ.frame = 6
+	# $tavernier/sprPNJ.frame = 6
 	$professeur/sprPNJ.frame = 7
-	$mamie/sprPNJ.frame = 8
+	# $mamie/sprPNJ.frame = 8
 	$maire/sprPNJ.frame = 9
 	$pecheur/sprPNJ.frame = 10
 #	set le type
@@ -85,9 +85,9 @@ func setPNJ():
 	$notaire.set_type(1)
 	$enfant.set_type(1)
 	# $paysan.set_type(2)
-	$tavernier.set_type(2)
+	#$tavernier.set_type(2)
 	$professeur.set_type(2)
-	$mamie.set_type(2)
+	# $mamie.set_type(2)
 	$maire.set_type(2)
 	$pecheur.set_type(2)
 

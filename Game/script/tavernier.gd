@@ -2,12 +2,12 @@ extends Node2D
 
 var state = 0
 
-var dialogue_path = "res://dialogue/paysan.json"
+var dialogue_path = "res://dialogue/tavernier.json"
 
 func _ready():
-	$PNJ/sprPNJ.frame = 5
+	$PNJ/sprPNJ.frame = 6
 	$PNJ.set_type(2)
-	$PNJ/Dialogue.	dialogue_path = dialogue_path
+	$PNJ/Dialogue.dialogue_path = dialogue_path
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
