@@ -1,22 +1,38 @@
 [
 	[
 		{
-			"name": "Henri",
+			"name": "Paysan",
 			"text": "Je suis un paysan !"
 		},
 		{
-			"name": "Henri",
+			"name": "Paysan",
 			"text": "Aide-moi à récolter le champ, j'irai tout revendre en ville !"
 		}
 	],
 	[
 		{
-			"name": "Bonjour",
+			"name": "Paysan",
 			"text": "Youhou !!!"
 		},
 		{
 			"name": "Bob le méchant",
 			"text": "Je suis vraiment méchant"
+		}
+	],
+	[
+		{
+			"name": "Paysan",
+			"text": "Merci beaucoup ! Voilà ton épée !"
+		},
+		{
+			"name": "Paysan",
+			"text": "J'espère qu'elle te sera utile"
+		}
+	],
+	[
+		{
+			"name": "Paysan",
+			"text": "Merci encore 😂"
 		}
 	]
 ]
