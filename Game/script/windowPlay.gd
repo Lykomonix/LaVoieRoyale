@@ -69,7 +69,7 @@ func setPNJ():
 #	set image perso
 	$roi/sprPNJ.frame = 0
 	$princesse/sprPNJ.frame = 1
-	$arnaqueur/sprPNJ.frame = 2
+	
 	
 	$enfant/sprPNJ.frame = 4
 	$paysan/sprPNJ.frame = 5
@@ -81,8 +81,8 @@ func setPNJ():
 #	set le type
 	$roi.set_type(1)
 	$princesse.set_type(0)
-	$arnaqueur.set_type(1)
-	
+	$arnaqueur/pnj.set_type(1)
+	$notaire/pnj.set_type(1)
 	$enfant.set_type(1)
 	$paysan.set_type(2)
 	$tavernier.set_type(2)

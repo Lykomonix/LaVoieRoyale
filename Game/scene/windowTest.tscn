@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cbde4ncinxdu2"]
+[gd_scene load_steps=8 format=3 uid="uid://cbde4ncinxdu2"]
 
 [ext_resource type="PackedScene" uid="uid://bj1g5xutg7yxw" path="res://scene/newMap.tscn" id="1_1mjiq"]
 [ext_resource type="Script" path="res://script/windowPlay.gd" id="1_qvymn"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/PNJ.tscn" id="3_0xtay"]
 [ext_resource type="PackedScene" uid="uid://0e0qu8v4n52w" path="res://scene/HUD.tscn" id="5_n8r3j"]
 [ext_resource type="Script" path="res://script/notaire.gd" id="6_5m0gn"]
+[ext_resource type="Script" path="res://script/arnaqueur.gd" id="7_20wa5"]
 
 [node name="windowTest" type="Node2D"]
 y_sort_enabled = true
@@ -24,10 +25,6 @@ position = Vector2(1779, 491)
 
 [node name="enfant" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1079, 642)
-
-[node name="arnaqueur" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(1160, 198)
-dialogue_path = "res://dialogue/arnaqueur.json"
 
 [node name="paysan" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(339, 562)
@@ -63,5 +60,12 @@ script = ExtResource("6_5m0gn")
 [node name="pnj" parent="notaire" instance=ExtResource("3_0xtay")]
 position = Vector2(1109, 461)
 dialogue_path = "res://dialogue/notaire.json"
+
+[node name="arnaqueur" type="Node2D" parent="."]
+script = ExtResource("7_20wa5")
+
+[node name="pnj" parent="arnaqueur" instance=ExtResource("3_0xtay")]
+position = Vector2(1160, 198)
+dialogue_path = "res://dialogue/arnaqueur.json"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
