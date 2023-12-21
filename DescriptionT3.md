@@ -28,13 +28,13 @@ Par ailleurs, malgré les opportunités des habitants, ces derniers peuvent mour
 ## Description du jeu
 
 - **Type de jeu** : Jeu d’aventure
-- **Incarnation du joueur** : *Un chaussetier du tiers-état d’Amboise*
+- **Incarnation du joueur** : *Un citoyen du tiers-état d’Amboise*
 
 **Déroulement d’une partie**
 
 Description du déroulement d’une partie : début, déroulement et fin
 
-- Début : L’avatar du joueur apparaît sur une map, il découvre qu’il est chaussetier et qu’il a l’opportunité de faire des rencontres (de parler à des PNJ (Personnage non-joueur) ).
+- Début : L’avatar du joueur apparaît sur une map, il découvre qu’il est citoyen d'une magnifique ville et qu’il a l’opportunité de faire des rencontres (de parler à des PNJ (Personnage non-joueur) ).
 - Déroulement : Le joueur se balade et parle à des PNJ, il accepte ou refuse les propositions qu’ils ont ou non à offrir afin d’évoluer dans le jeu. 
 
 3 étapes/scènes de jeu
@@ -49,6 +49,10 @@ Description du déroulement d’une partie : début, déroulement et fin
 **Modèle conceptuel applicatif**
 
 Liste, MCD ou diagramme de classe décrivant le jeu, et en particulier les entités, en séparant ce qui est exposé au joueur de ce qui est interne au jeu.
+
+- Notre code de Diagramme de Classe se trouve dans notre dépôt GIT. [Diagramme de Classe](https://git.unistra.fr/auskour/t3-mod-23-b/-/blob/main/Conception/Game.puml?ref_type=heads)
+
+![Diagramme de Classe](./Conception/Game.svg)
 
 
 ## Description des fonctionnalités 
@@ -82,7 +86,7 @@ Liste, MCD ou diagramme de classe décrivant le jeu, et en particulier les entit
 
 ***Gestion des tours***
 
-- *Accepter l’offre d’un PNJ peut permettre le passage à la phase suivante selon l’offre du PNJ (seul celui qui demande de faire un tour de cheval permet le passage au tour suivant)*
+- *Accepter l’offre d’un PNJ peut permettre le passage à la phase suivante selon l’offre du PNJ*
 
 ## Scénarios
 
