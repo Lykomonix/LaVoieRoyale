@@ -17,9 +17,9 @@ color = Color(0.4, 0.4, 0.4, 0.603922)
 
 [node name="lblAccueil" type="Label" parent="zoneText"]
 layout_mode = 0
-offset_top = 896.0
+offset_top = 960.0
 offset_right = 1920.0
-offset_bottom = 968.0
+offset_bottom = 1032.0
 theme_override_font_sizes/font_size = 50
 text = "retourner à l'accueil"
 horizontal_alignment = 1
@@ -27,12 +27,121 @@ horizontal_alignment = 1
 [node name="lblChoix" type="Label" parent="zoneText"]
 layout_mode = 0
 offset_left = 672.0
-offset_top = 896.0
+offset_top = 960.0
 offset_right = 712.0
-offset_bottom = 968.0
+offset_bottom = 1032.0
 theme_override_font_sizes/font_size = 50
 text = ">"
 
-[node name="sprHenri" type="Sprite2D" parent="zoneText"]
-position = Vector2(960, 416)
+[node name="lblCorp" type="Label" parent="zoneText"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 64.0
+offset_right = 1920.0
+offset_bottom = 177.0
+theme_override_font_sizes/font_size = 80
+text = "AUSKOUR"
+horizontal_alignment = 1
+
+[node name="henri" type="ColorRect" parent="zoneText"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 192.0
+offset_right = 613.0
+offset_bottom = 928.0
+metadata/_edit_group_ = true
+
+[node name="sprHenri" type="Sprite2D" parent="zoneText/henri"]
+position = Vector2(290.5, 164)
+scale = Vector2(0.453906, 0.455556)
 texture = ExtResource("5_juw6l")
+
+[node name="lblNom" type="Label" parent="zoneText/henri"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 327.0
+offset_right = 582.0
+offset_bottom = 399.0
+theme_override_colors/font_color = Color(0.00392157, 0.00392157, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "HARTZ Henri"
+horizontal_alignment = 1
+
+[node name="lblDescription" type="Label" parent="zoneText/henri"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 414.0
+offset_right = 575.0
+offset_bottom = 734.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "détruire le nexus adverse"
+horizontal_alignment = 1
+
+[node name="simon" type="ColorRect" parent="zoneText"]
+offset_left = 672.0
+offset_top = 192.0
+offset_right = 1253.0
+offset_bottom = 928.0
+metadata/_edit_group_ = true
+
+[node name="sprSimon" type="Sprite2D" parent="zoneText/simon"]
+position = Vector2(290.5, 164)
+scale = Vector2(0.453906, 0.455556)
+texture = ExtResource("5_juw6l")
+
+[node name="lblNom" type="Label" parent="zoneText/simon"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 327.0
+offset_right = 582.0
+offset_bottom = 399.0
+theme_override_colors/font_color = Color(0.00392157, 0.00392157, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "HARTZ Henri"
+horizontal_alignment = 1
+
+[node name="lblDescription" type="Label" parent="zoneText/simon"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 414.0
+offset_right = 575.0
+offset_bottom = 734.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "détruire le nexus adverse"
+horizontal_alignment = 1
+
+[node name="mathieu" type="ColorRect" parent="zoneText"]
+offset_left = 1312.0
+offset_top = 192.0
+offset_right = 1893.0
+offset_bottom = 928.0
+metadata/_edit_group_ = true
+
+[node name="sprMathieu" type="Sprite2D" parent="zoneText/mathieu"]
+position = Vector2(290.5, 164)
+scale = Vector2(0.453906, 0.455556)
+texture = ExtResource("5_juw6l")
+
+[node name="lblNom" type="Label" parent="zoneText/mathieu"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 327.0
+offset_right = 582.0
+offset_bottom = 399.0
+theme_override_colors/font_color = Color(0.00392157, 0.00392157, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "HARTZ Henri"
+horizontal_alignment = 1
+
+[node name="lblDescription" type="Label" parent="zoneText/mathieu"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 414.0
+offset_right = 575.0
+offset_bottom = 734.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "détruire le nexus adverse"
+horizontal_alignment = 1
