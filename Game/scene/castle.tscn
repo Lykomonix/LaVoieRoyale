@@ -1,12 +1,12 @@
 [gd_scene load_steps=30 format=3 uid="uid://bndpjvgumg6m4"]
 
-[ext_resource type="Texture2D" uid="uid://3kt848avginn" path="res://images/Sprites/Town Tileset v1.4.png" id="1_4x4sw"]
-[ext_resource type="Texture2D" uid="uid://bo4dnu2o5vmjt" path="res://ASSETS/Sprites/Town Tileset v1.2.png" id="1_shhth"]
-[ext_resource type="Texture2D" uid="uid://b17qdkq8kjr17" path="res://ASSETS/plains.png" id="2_s0nb2"]
-[ext_resource type="Texture2D" uid="uid://71b6u1mdrbip" path="res://ASSETS/Forest Tileset.png" id="3_o5whw"]
-[ext_resource type="Texture2D" uid="uid://oo55brb2qimb" path="res://ASSETS/Sprites/Town Tileset v1.2_baguette.png" id="4_adbwe"]
-[ext_resource type="Texture2D" uid="uid://dbsggghxgtp0q" path="res://ASSETS/castle.jpg.png" id="4_uuxbe"]
-[ext_resource type="Texture2D" uid="uid://cnm31oiotitto" path="res://ASSETS/chateau.png" id="6_3y0f7"]
+[ext_resource type="Texture2D" uid="uid://ces48pgykst17" path="res://images/Sprites/Town Tileset v1.4.png" id="1_4x4sw"]
+[ext_resource type="Texture2D" uid="uid://b7aj1phccvwq0" path="res://ASSETS/Sprites/Town Tileset v1.2.png" id="1_shhth"]
+[ext_resource type="Texture2D" uid="uid://b20dm44q8bwes" path="res://ASSETS/plains.png" id="2_s0nb2"]
+[ext_resource type="Texture2D" uid="uid://b7wqhdm7kfjwp" path="res://ASSETS/Forest Tileset.png" id="3_o5whw"]
+[ext_resource type="Texture2D" uid="uid://bg68b2nawmj66" path="res://ASSETS/Sprites/Town Tileset v1.2_baguette.png" id="4_adbwe"]
+[ext_resource type="Texture2D" uid="uid://b0u3dc27xe5fn" path="res://ASSETS/castle.jpg.png" id="4_uuxbe"]
+[ext_resource type="Texture2D" uid="uid://dbd8pvrb0t0uc" path="res://ASSETS/chateau.png" id="6_3y0f7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_osqj6"]
 texture = ExtResource("1_4x4sw")

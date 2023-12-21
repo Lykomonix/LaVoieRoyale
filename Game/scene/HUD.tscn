@@ -17,7 +17,7 @@ offset_left = 17.0
 offset_top = 17.0
 offset_right = 307.0
 offset_bottom = 65.0
-max_value = 60.0
+max_value = 90.0
 
 [node name="lbl_prestige" type="Label" parent="."]
 offset_left = 313.0
