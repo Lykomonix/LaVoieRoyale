@@ -22,8 +22,6 @@ func start(index):
 	next_script()
 	
 func load_dialogue(index):
-	print(index)
-	
 	var file = FileAccess.open(dialogue_path,FileAccess.READ)
 	var content = JSON.parse_string(file.get_as_text())
 	file.close()
