@@ -30,9 +30,9 @@ script = ExtResource("3_54iex")
 
 [node name="sprQuest" type="Sprite2D" parent="."]
 position = Vector2(0, -26)
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_ghabv")
-vframes = 2
+vframes = 3
 
 [node name="Dialogue" parent="." instance=ExtResource("4_jpljy")]
 offset_top = -25.0
