@@ -1,22 +1,13 @@
-[gd_scene load_steps=12 format=3 uid="uid://0e0qu8v4n52w"]
+[gd_scene load_steps=9 format=3 uid="uid://0e0qu8v4n52w"]
 
-[ext_resource type="Texture2D" uid="uid://ouea6nonj6np" path="res://images/zoin.png" id="1_ctawu"]
+[ext_resource type="Texture2D" uid="uid://hlj52m43qwq8" path="res://images/zoin.png" id="1_ctawu"]
 [ext_resource type="Script" path="res://script/HUD.gd" id="1_ey6y8"]
-[ext_resource type="Texture2D" uid="uid://bivsso6j5gfq4" path="res://images/sacs.png" id="2_hq0jn"]
+[ext_resource type="Texture2D" uid="uid://c1fioy52epq5j" path="res://images/sacs.png" id="2_hq0jn"]
 [ext_resource type="Script" path="res://script/sac.gd" id="3_akp2h"]
 [ext_resource type="PackedScene" uid="uid://brgt2hmis76a2" path="res://scene/item.tscn" id="4_6jd3g"]
-[ext_resource type="Texture2D" uid="uid://b1dt4um5tdxbm" path="res://images/zoom.png" id="6_04qre"]
+[ext_resource type="Texture2D" uid="uid://do04x6hgamk76" path="res://images/zoom.png" id="6_04qre"]
 [ext_resource type="Script" path="res://script/sprZoom.gd" id="7_kspe8"]
-[ext_resource type="Script" path="res://scene/MenuVente.gd" id="8_h2a8u"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_vje7k"]
-font_size = 36
-
-[sub_resource type="LabelSettings" id="LabelSettings_qojp1"]
-font_size = 18
-
-[sub_resource type="LabelSettings" id="LabelSettings_35xlw"]
-font_size = 18
+[ext_resource type="PackedScene" uid="uid://bgsnrx22q0kec" path="res://scene/vente.tscn" id="8_ww4xc"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_ey6y8")
@@ -57,12 +48,6 @@ texture = ExtResource("2_hq0jn")
 vframes = 2
 script = ExtResource("3_akp2h")
 
-[node name="item" parent="." instance=ExtResource("4_6jd3g")]
-offset_left = 390.0
-offset_top = 128.0
-offset_right = 1590.0
-offset_bottom = 928.0
-
 [node name="sprZoom" type="Sprite2D" parent="."]
 position = Vector2(1824, 96)
 scale = Vector2(0.6, 0.6)
@@ -70,86 +55,16 @@ texture = ExtResource("6_04qre")
 vframes = 2
 script = ExtResource("7_kspe8")
 
-[node name="MenuVente" type="Node2D" parent="."]
-script = ExtResource("8_h2a8u")
+[node name="item" parent="." instance=ExtResource("4_6jd3g")]
+visible = false
+offset_left = 390.0
+offset_top = 128.0
+offset_right = 1590.0
+offset_bottom = 928.0
 
-[node name="vente" type="ReferenceRect" parent="MenuVente"]
-anchors_preset = -1
-anchor_left = 0.271
-anchor_top = 0.18
-anchor_right = 0.546
-anchor_bottom = 0.523
-offset_left = 521.0
-offset_top = 194.0
-offset_right = 521.0
-offset_bottom = 194.56
-
-[node name="Question" type="Label" parent="MenuVente/vente"]
-layout_mode = 0
-offset_right = 527.0
-offset_bottom = 63.0
-text = "Que voulez-vous vendre ?"
-label_settings = SubResource("LabelSettings_vje7k")
-horizontal_alignment = 1
-vertical_alignment = 1
-uppercase = true
-
-[node name="Choix1" type="Label" parent="MenuVente/vente"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.252
-anchor_top = 0.315
-anchor_right = 0.736
-anchor_bottom = 0.461
-offset_left = 133.0
-offset_top = 116.824
-offset_right = 388.0
-offset_bottom = 174.742
-text = "Je veux vendre mon titre de noblesse."
-label_settings = SubResource("LabelSettings_qojp1")
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
-
-[node name="Choix2" type="Label" parent="MenuVente/vente"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.252
-anchor_top = 0.474
-anchor_right = 0.736
-anchor_bottom = 0.62
-offset_left = 133.0
-offset_top = 175.735
-offset_right = 388.0
-offset_bottom = 229.653
-text = "Je veux vendre 2 champs."
-label_settings = SubResource("LabelSettings_qojp1")
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
-
-[node name="Choix3" type="Label" parent="MenuVente/vente"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.252
-anchor_top = 0.633
-anchor_right = 0.736
-anchor_bottom = 0.779
-offset_left = 133.0
-offset_top = 234.646
-offset_right = 388.0
-offset_bottom = 292.564
-text = "Je veux vendre mon ponton de pêche."
-label_settings = SubResource("LabelSettings_qojp1")
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
-
-[node name="Selection" type="Label" parent="MenuVente/vente"]
-layout_mode = 0
-offset_left = 117.0
-offset_top = 120.0
-offset_right = 128.0
-offset_bottom = 149.0
-text = ">"
-label_settings = SubResource("LabelSettings_35xlw")
+[node name="vente" parent="." instance=ExtResource("8_ww4xc")]
+visible = false
+offset_left = 636.0
+offset_top = 356.0
+offset_right = 1276.0
+offset_bottom = 740.0

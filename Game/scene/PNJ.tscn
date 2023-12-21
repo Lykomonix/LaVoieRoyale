@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://bji4ayw5rnd3b"]
 
 [ext_resource type="Script" path="res://script/PNJ.gd" id="1_lqbls"]
-[ext_resource type="Texture2D" uid="uid://dnneijtc1jim2" path="res://images/PNJ.png" id="2_k4b8w"]
-[ext_resource type="Script" path="res://scene/sprPNJ.gd" id="3_54iex"]
-[ext_resource type="Texture2D" uid="uid://65eeln50kkw6" path="res://images/quest.png" id="3_ghabv"]
+[ext_resource type="Texture2D" uid="uid://klh07whhe637" path="res://images/PNJ.png" id="2_k4b8w"]
+[ext_resource type="Script" path="res://script/sprPNJ.gd" id="3_3lhkg"]
+[ext_resource type="Texture2D" uid="uid://ugsmwfcg5bbv" path="res://images/quest.png" id="3_ghabv"]
 [ext_resource type="PackedScene" uid="uid://c6vb22n2hgl3s" path="res://scene/dialogue.tscn" id="4_jpljy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_36ofq"]
@@ -26,7 +26,7 @@ scale = Vector2(0.656, 0.656)
 texture = ExtResource("2_k4b8w")
 hframes = 3
 vframes = 4
-script = ExtResource("3_54iex")
+script = ExtResource("3_3lhkg")
 
 [node name="sprQuest" type="Sprite2D" parent="."]
 position = Vector2(0, -26)
