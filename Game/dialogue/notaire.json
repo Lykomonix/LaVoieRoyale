@@ -1,0 +1,20 @@
+[
+    [
+        {
+            "name": "Notaire",
+            "text": "Bonjour, j'ai un service à vous demander."
+        },
+        {
+            "name": "Amboisien",
+            "text": "Bonjour Monsieur le notaire, que puis-je faire pour vous ?"
+        },
+        {
+            "name": "Notaire",
+            "text": "Pourrais-je vous demander de retrouver un document important qui a été égaré ? Il s'agit d'un contrat très précieux pour un de mes clients."
+        },
+        {
+            "name": "Amboisien",
+            "text": "Bien sûr, je vais faire de mon mieux pour vous aider."
+        }
+    ]
+]

@@ -1,0 +1,24 @@
+[
+    [
+        {
+            "name": "Arnaqueur",
+            "text": "Hé toi, viens par ici ! J'ai une mission pour toi !"
+        },
+        {
+            "name": "Amboisien",
+            "text": "Oh vraiment ? Quelle est-elle ?"
+        },
+        {
+            "name": "Arnaqueur",
+            "text": "J'ai besoin que tu récupères un colis pour moi à l'entrepôt du port. Ça te rapportera gros, tu sais !"
+        },
+        {
+            "name": "Amboisien",
+            "text": "D'accord, je m'y rends de ce pas !"
+        },
+        {
+            "name": "Arnaqueur",
+            "text": "Si seulement il savait que c'est un colis de drogue..."
+        }
+    ]
+]
