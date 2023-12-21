@@ -67,7 +67,7 @@ func ajouteArgent():
 
 func setPNJ():
 #	set image perso
-	$roi/sprPNJ.frame = 0
+#	$roi/sprPNJ.frame = 0
 	$princesse/sprPNJ.frame = 1
 	
 	
@@ -79,7 +79,7 @@ func setPNJ():
 	$maire/sprPNJ.frame = 9
 	$pecheur/sprPNJ.frame = 10
 #	set le type
-	$roi.set_type(1)
+#	$roi.set_type(1)
 	$princesse.set_type(0)
 	# $arnaqueur/pnj.set_type(1)
 	# $notaire/pnj.set_type(1)
