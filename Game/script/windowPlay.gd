@@ -64,6 +64,7 @@ func ajouteArgent():
 	argent += gain
 
 func setPNJ():
+#	set image perso
 	$roi/sprPNJ.frame = 0
 	$princesse/sprPNJ.frame = 1
 	$arnaqueur/sprPNJ.frame = 2
@@ -75,6 +76,18 @@ func setPNJ():
 	$mamie/sprPNJ.frame = 8
 	$maire/sprPNJ.frame = 9
 	$pecheur/sprPNJ.frame = 10
+#	set le type
+	$roi.set_type(1)
+	$princesse.set_type()
+	$arnaqueur.set_type(1)
+	$notaire.set_type(1)
+	$enfant.set_type(1)
+	$paysan.set_type(2)
+	$tavernier.set_type(2)
+	$professeur.set_type(2)
+	$mamie.set_type(2)
+	$maire.set_type(2)
+	$pecheur.set_type(2)
 
 func finAlliance():
 	var ranNumber = rng.randi_range(1, 100)
