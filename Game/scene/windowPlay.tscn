@@ -33,18 +33,12 @@ position = Vector2(1729, 607)
 
 [node name="enfant" parent="." instance=ExtResource("5_e6mf4")]
 position = Vector2(481, 479)
-dialogue_path = "res://dialogue/juge.json"
 
 [node name="arnaqueur" parent="." instance=ExtResource("5_e6mf4")]
 position = Vector2(417, 191)
-dialogue_path = "res://dialogue/arnaqueur.json"
 
 [node name="notaire" parent="." instance=ExtResource("5_e6mf4")]
 position = Vector2(481, 767)
-dialogue_path = "res://dialogue/notaire.json"
-
-[node name="paysan" parent="." instance=ExtResource("5_e6mf4")]
-position = Vector2(257, 383)
 
 [node name="tavernier" parent="." instance=ExtResource("5_e6mf4")]
 position = Vector2(513, 351)
@@ -52,14 +46,12 @@ position = Vector2(513, 351)
 [node name="professeur" parent="." instance=ExtResource("5_e6mf4")]
 position = Vector2(1312, 734)
 scale = Vector2(1, 0.995454)
-dialogue_path = "res://dialogue/professeur.json"
 
 [node name="mamie" parent="." instance=ExtResource("5_e6mf4")]
 position = Vector2(1089, 383)
 
 [node name="maire" parent="." instance=ExtResource("5_e6mf4")]
 position = Vector2(1313, 479)
-dialogue_path = "res://dialogue/maire.json"
 
 [node name="pecheur" parent="." instance=ExtResource("5_e6mf4")]
 position = Vector2(673, 1055)
