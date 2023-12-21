@@ -13,13 +13,13 @@ script = ExtResource("1_qvymn")
 [node name="newMap" parent="." instance=ExtResource("1_1mjiq")]
 
 [node name="player" parent="." instance=ExtResource("2_cf20v")]
-position = Vector2(286, 585)
+position = Vector2(435, 535)
 
 [node name="princesse" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(1780, 568)
+position = Vector2(1779, 557)
 
 [node name="roi" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(1778, 512)
+position = Vector2(1779, 491)
 
 [node name="enfant" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1079, 642)
@@ -33,23 +33,30 @@ position = Vector2(1120, 449)
 dialogue_path = "res://dialogue/notaire.json"
 
 [node name="paysan" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(345, 572)
+position = Vector2(277, 577)
 
 [node name="tavernier" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(880, 312)
+position = Vector2(833, 287)
 
 [node name="professeur" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1112, 881)
 dialogue_path = "res://dialogue/professeur.json"
 
 [node name="mamie" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(813, 711)
+position = Vector2(786, 685)
 
 [node name="maire" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(822, 882)
 dialogue_path = "res://dialogue/maire.json"
 
 [node name="pecheur" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(436, 1003)
+position = Vector2(446, 984)
 
 [node name="HUD" parent="." instance=ExtResource("5_n8r3j")]
+
+[node name="Timer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 300.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
