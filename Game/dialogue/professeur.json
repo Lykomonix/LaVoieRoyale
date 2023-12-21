@@ -1,24 +1,14 @@
 [
-    [
-        {
-            "name": "Professeur",
-            "text": "Bonjour, je suis le professeur de cette ville !"
-        },
-        {
-            "name": "Amboisien",
-            "text": "Bonjour Professeur !"
-        },
-        {
-            "name": "Professeur",
-            "text": "J'ai un besoin urgent de feuilles pour une expérience en classe. Pourrais-tu m'en rapporter depuis la forêt ?"
-        },
-        {
-            "name": "Amboisien",
-            "text": "Pas de souci, je vais chercher des feuilles tout de suite !"
-        },
-        {
-            "name": "Professeur",
-            "text": "Merci mon cher !"
-        }
-    ]
+	[
+		{
+			"name": "Professeur",
+			"text": "Je fais pas cours aujourd'hui, tiens, prends ce que tu veux."
+		}
+	],
+	[
+		{
+			"name": "Professeur",
+			"text": "Surtout, ne le répète à personne."
+		}
+	]
 ]

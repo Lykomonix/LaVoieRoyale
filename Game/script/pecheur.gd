@@ -2,10 +2,10 @@ extends Node2D
 
 var state = 0
 
-var dialogue_path = "res://dialogue/paysan.json"
+var dialogue_path = "res://dialogue/pecheur.json"
 
 func _ready():
-	$PNJ/sprPNJ.frame = 5
+	$PNJ/sprPNJ.frame = 10
 	$PNJ.set_type(2)
 	$PNJ/Dialogue.dialogue_path = dialogue_path
 

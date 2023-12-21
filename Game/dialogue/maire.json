@@ -2,7 +2,7 @@
 	[
 		{
 			"name": "Maire",
-			"text": "Bonjour, je suis le maire de la ville !"
+			"text": "Bonjour, je suis le maire de la ville ! Qu'est-ce que c'est que cet accoutrement ?"
 		},
 		{
 			"name": "Amboisien",
@@ -23,12 +23,8 @@
 	],
 	[
 		{
-			"name": "Bonjour",
-			"text": "Youhou !!!"
-		},
-		{
-			"name": "Bob le méchant",
-			"text": "Je suis vraiment méchant"
+			"name": "Maire",
+			"text": "Voilà, un homme d'une telle prestence en a bien besoin !"
 		}
 	]
 ]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0vlb6bbpdsgb"]
+
+[ext_resource type="Script" path="res://script/maire.gd" id="1_2luh6"]
+[ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/personnages/PNJ.tscn" id="2_uxggc"]
+
+[node name="maire" type="Node2D"]
+script = ExtResource("1_2luh6")
+
+[node name="PNJ" parent="." instance=ExtResource("2_uxggc")]

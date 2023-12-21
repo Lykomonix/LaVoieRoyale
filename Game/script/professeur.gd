@@ -2,10 +2,10 @@ extends Node2D
 
 var state = 0
 
-var dialogue_path = "res://dialogue/paysan.json"
+var dialogue_path = "res://dialogue/professeur.json"
 
 func _ready():
-	$PNJ/sprPNJ.frame = 5
+	$PNJ/sprPNJ.frame = 7
 	$PNJ.set_type(2)
 	$PNJ/Dialogue.dialogue_path = dialogue_path
 
@@ -16,12 +16,6 @@ func _process(delta):
 		if state == 0:
 			print("début quête")
 			$PNJ/Dialogue.next_script()
-		elif state == 1:
-			$PNJ/Dialogue.next_script()
-			print("va faire la quete")
-		elif state == 2:
-			$PNJ/Dialogue.next_script()
-			print("Merci pour les clients fidèles")
 			get_parent().ajouteItem()
 		else:
 			$PNJ/Dialogue.next_script()

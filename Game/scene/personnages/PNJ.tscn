@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://bji4ayw5rnd3b"]
 
-[ext_resource type="Script" path="res://script/PNJ.gd" id="1_lqbls"]
-[ext_resource type="Texture2D" uid="uid://du27a1yplp7l4" path="res://images/PNJ.png" id="2_k4b8w"]
-[ext_resource type="Script" path="res://script/sprPNJ.gd" id="3_3lhkg"]
-[ext_resource type="Texture2D" uid="uid://tqm68mpv018k" path="res://images/quest.png" id="3_ghabv"]
-[ext_resource type="PackedScene" uid="uid://c6vb22n2hgl3s" path="res://scene/dialogue.tscn" id="4_jpljy"]
+[ext_resource type="Script" path="res://script/PNJ.gd" id="1_rxn4q"]
+[ext_resource type="Texture2D" uid="uid://du27a1yplp7l4" path="res://images/PNJ.png" id="2_6nbv8"]
+[ext_resource type="Script" path="res://script/sprPNJ.gd" id="3_5cegf"]
+[ext_resource type="Texture2D" uid="uid://tqm68mpv018k" path="res://images/quest.png" id="4_78kod"]
+[ext_resource type="PackedScene" uid="uid://c6vb22n2hgl3s" path="res://scene/dialogue.tscn" id="5_w2wjp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_36ofq"]
 size = Vector2(40, 26)
@@ -13,7 +13,7 @@ size = Vector2(40, 26)
 radius = 32.0
 
 [node name="PNJ" type="CharacterBody2D"]
-script = ExtResource("1_lqbls")
+script = ExtResource("1_rxn4q")
 
 [node name="colPNJ" type="CollisionShape2D" parent="."]
 position = Vector2(0, 27)
@@ -23,18 +23,18 @@ shape = SubResource("RectangleShape2D_36ofq")
 [node name="sprPNJ" type="Sprite2D" parent="."]
 position = Vector2(0, 10)
 scale = Vector2(0.656, 0.656)
-texture = ExtResource("2_k4b8w")
+texture = ExtResource("2_6nbv8")
 hframes = 3
 vframes = 4
-script = ExtResource("3_3lhkg")
+script = ExtResource("3_5cegf")
 
 [node name="sprQuest" type="Sprite2D" parent="."]
 position = Vector2(0, -26)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("3_ghabv")
+texture = ExtResource("4_78kod")
 vframes = 3
 
-[node name="Dialogue" parent="." instance=ExtResource("4_jpljy")]
+[node name="Dialogue" parent="." instance=ExtResource("5_w2wjp")]
 offset_top = -25.0
 offset_bottom = -25.0
 

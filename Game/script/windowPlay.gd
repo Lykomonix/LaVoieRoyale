@@ -74,10 +74,10 @@ func setPNJ():
 	$enfant/sprPNJ.frame = 4
 	# $paysan/sprPNJ.frame = 5
 	# $tavernier/sprPNJ.frame = 6
-	$professeur/sprPNJ.frame = 7
+	# $professeur/sprPNJ.frame = 7
 	# $mamie/sprPNJ.frame = 8
-	$maire/sprPNJ.frame = 9
-	$pecheur/sprPNJ.frame = 10
+	# $maire/sprPNJ.frame = 9
+	#$pecheur/sprPNJ.frame = 10
 #	set le type
 	$roi.set_type(1)
 	$princesse.set_type(0)
@@ -86,10 +86,10 @@ func setPNJ():
 	$enfant.set_type(1)
 	# $paysan.set_type(2)
 	#$tavernier.set_type(2)
-	$professeur.set_type(2)
+	# $professeur.set_type(2)
 	# $mamie.set_type(2)
-	$maire.set_type(2)
-	$pecheur.set_type(2)
+	# $maire.set_type(2)
+	#$pecheur.set_type(2)
 
 func finAlliance():
 	var ranNumber = rng.randi_range(1, 100)
