@@ -50,6 +50,15 @@ position = Vector2(649, 983)
 [node name="tomate" parent="." instance=ExtResource("7_7ycci")]
 position = Vector2(130, 782)
 
+[node name="tavernier" parent="." instance=ExtResource("5_dchvm")]
+position = Vector2(833, 291)
+
+[node name="paysan" parent="." instance=ExtResource("6_mpt20")]
+position = Vector2(275, 584)
+
+[node name="tomate" parent="." instance=ExtResource("7_7ycci")]
+position = Vector2(409, 611)
+
 [node name="HUD" parent="." instance=ExtResource("5_n8r3j")]
 visible = false
 

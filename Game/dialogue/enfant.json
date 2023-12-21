@@ -1,0 +1,28 @@
+[
+	[
+		{
+			"name": "Juge",
+			"text": "Bonjour, excusez-moi de vous déranger, mais j'ai un problème."
+		},
+		{
+			"name": "Amboisien",
+			"text": "Bonjour Monsieur le Juge, que puis-je faire pour vous ?"
+		},
+		{
+			"name": "Juge",
+			"text": "Il y a eu un vol de preuves dans une affaire en cours."
+		},
+		{
+			"name": "Amboisien",
+			"text": "Ah, c'est grave ça ! Je vais mener mon enquête."
+		},
+		{
+			"name": "Juge",
+			"text": "Pouvez-vous retrouver ces preuves pour moi ?"
+		},
+		{
+			"name": "Amboisien",
+			"text": "Bien sûr, je vais faire ce que je peux."
+		}
+	]
+]

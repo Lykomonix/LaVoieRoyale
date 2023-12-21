@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://5diacyy0t3ti"]
+
+[ext_resource type="Script" path="res://script/tavernier.gd" id="1_gurxv"]
+[ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/PNJ.tscn" id="2_5fssv"]
+
+[node name="Tavernier" type="Node2D"]
+script = ExtResource("1_gurxv")
+
+[node name="PNJ" parent="." instance=ExtResource("2_5fssv")]

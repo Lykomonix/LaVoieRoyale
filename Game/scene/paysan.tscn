@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjmclo0n4arp0"]
+
+[ext_resource type="Script" path="res://script/paysan.gd" id="1_qv016"]
+[ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/PNJ.tscn" id="2_nu718"]
+
+[node name="paysan" type="Node2D"]
+script = ExtResource("1_qv016")
+
+[node name="PNJ" parent="." instance=ExtResource("2_nu718")]
