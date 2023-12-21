@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c6vb22n2hgl3s"]
 
-[ext_resource type="Script" path="res://Dialogue.gd" id="1_kmrs4"]
-[ext_resource type="Texture2D" uid="uid://8rh5cdehxtax" path="res://images/dialogue.png" id="2_n5o6m"]
+[ext_resource type="Script" path="res://script/Dialogue.gd" id="1_kmrs4"]
+[ext_resource type="Texture2D" uid="uid://fnorquslqgl6" path="res://images/dialogue.png" id="2_n5o6m"]
 
 [node name="Dialogue" type="Control"]
 layout_mode = 3

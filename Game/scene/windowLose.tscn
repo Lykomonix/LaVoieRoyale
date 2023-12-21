@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://script/windowEnd.gd" id="1_en38s"]
 [ext_resource type="PackedScene" uid="uid://bj1g5xutg7yxw" path="res://scene/newMap.tscn" id="2_d25ba"]
-[ext_resource type="Texture2D" uid="uid://do7f8fm4vow1r" path="res://images/hourglass.png" id="4_7jkh7"]
+[ext_resource type="Texture2D" uid="uid://l7u64l8er3ix" path="res://images/hourglass.png" id="4_7jkh7"]
 
 [node name="windowLose" type="Node2D"]
 script = ExtResource("1_en38s")

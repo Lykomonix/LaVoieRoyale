@@ -1,0 +1,42 @@
+[
+	[
+		{
+			"name": "Tavernier",
+			"text": "Bonjour jeune amboisien !"
+		},
+		{
+			"name": "Tavernier",
+			"text": "J'ai perdu mes bières quelque part, est-ce que tu pourrais m'aider à les retrouver ?"
+		},
+        {
+			"name": "Tavernier",
+			"text": "Il me semble qu'elles étaient au sud d'ici"
+		}
+	],
+	[
+		{
+			"name": "Tavernier",
+			"text": "Merci encore d'avoir accepté de m'aider, j'attendrai le temps qu'il faut !"
+		},
+		{
+			"name": "Tavernier",
+			"text": "Je saurai te récompenser comme il se doit."
+		}
+	],
+	[
+		{
+			"name": "Tavernier",
+			"text": "Oh mais voilà ma binouze ! Hmmm, tu n'as pas retrouvé les autres."
+		},
+		{
+			"name": "Tavernier",
+			"text": "Ce n'est pas grave, voici ta récompense."
+		}
+	],
+	[
+		{
+			"name": "Tavernier",
+			"text": "Santé !"
+		}
+	]
+]
