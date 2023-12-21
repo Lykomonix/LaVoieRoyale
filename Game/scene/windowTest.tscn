@@ -53,3 +53,10 @@ dialogue_path = "res://dialogue/maire.json"
 position = Vector2(436, 985)
 
 [node name="HUD" parent="." instance=ExtResource("5_n8r3j")]
+
+[node name="Timer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 300.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

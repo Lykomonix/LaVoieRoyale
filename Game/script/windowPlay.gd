@@ -8,6 +8,7 @@ var rng = RandomNumberGenerator.new()
 func _ready():
 	finNaissance()
 	setPNJ()
+	$Timer.start()
 
 func _process(delta):
 	$HUD/prestige.value = prestige
@@ -16,6 +17,7 @@ func _process(delta):
 		get_parent().gagne()
 	if Input.is_key_pressed(KEY_E):
 		get_parent().perdu()
+		
 
 func ajouteItem():
 	var item
@@ -119,3 +121,7 @@ func finMaire():
 		get_parent().gagne("Vous êtes le nouveau maire d'Amboise, victoire par Maire")
 	else:
 		get_parent().perdu("Vous avez perdu le vote, le nouveau maire vous envoie en prison")
+
+
+func _on_timer_timeout():
+	get_parent().perdu("Vous êtes mort sans être noble")
