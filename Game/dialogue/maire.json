@@ -1,0 +1,34 @@
+[
+    [
+        {
+            "name": "Maire",
+            "text": "Bonjour, je suis le maire de la ville !"
+        },
+        {
+            "name": "Amboisien",
+            "text": "Bonjour Monsieur le Maire."
+        },
+        {
+            "name": "Maire",
+            "text": "J'ai une tâche importante pour toi. Les rues de la ville ont besoin d'être nettoyées. Pourrais-tu ramasser les déchets qui traînent ?"
+        },
+        {
+            "name": "Amboisien",
+            "text": "Bien sûr Monsieur le Maire."
+        },
+        {
+            "name": "Maire",
+            "text": "Merci beaucoup !"
+        }
+    ],
+    [
+        {
+            "name": "Bonjour",
+            "text": "Youhou !!!"
+        },
+        {
+            "name": "Bob le méchant",
+            "text": "Je suis vraiment méchant"
+        }
+    ]
+]
