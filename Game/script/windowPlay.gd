@@ -15,7 +15,7 @@ func _process(delta):
 	$HUD/lbl_argent.text = str(argent)
 	if Input.is_key_pressed(KEY_A):
 		get_parent().gagne()
-	if Input.is_key_pressed(KEY_E):
+	if Input.is_key_pressed(KEY_E): 
 		get_parent().perdu()
 		
 
@@ -72,7 +72,7 @@ func setPNJ():
 	$arnaqueur/sprPNJ.frame = 2
 	$notaire/sprPNJ.frame = 3
 	$enfant/sprPNJ.frame = 4
-	$paysan/sprPNJ.frame = 5
+	# $paysan/sprPNJ.frame = 5
 	$tavernier/sprPNJ.frame = 6
 	$professeur/sprPNJ.frame = 7
 	$mamie/sprPNJ.frame = 8
@@ -84,7 +84,7 @@ func setPNJ():
 	$arnaqueur.set_type(1)
 	$notaire.set_type(1)
 	$enfant.set_type(1)
-	$paysan.set_type(2)
+	# $paysan.set_type(2)
 	$tavernier.set_type(2)
 	$professeur.set_type(2)
 	$mamie.set_type(2)

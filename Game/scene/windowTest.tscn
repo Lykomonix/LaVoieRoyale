@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://cbde4ncinxdu2"]
+[gd_scene load_steps=8 format=3 uid="uid://cbde4ncinxdu2"]
 
 [ext_resource type="PackedScene" uid="uid://bj1g5xutg7yxw" path="res://scene/newMap.tscn" id="1_1mjiq"]
 [ext_resource type="Script" path="res://script/windowPlay.gd" id="1_qvymn"]
 [ext_resource type="PackedScene" uid="uid://bi764xd14c4rj" path="res://scene/anime_player.tscn" id="2_cf20v"]
 [ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/PNJ.tscn" id="3_0xtay"]
 [ext_resource type="PackedScene" uid="uid://0e0qu8v4n52w" path="res://scene/HUD.tscn" id="5_n8r3j"]
+[ext_resource type="PackedScene" uid="uid://bjmclo0n4arp0" path="res://scene/paysan.tscn" id="6_mpt20"]
+[ext_resource type="PackedScene" uid="uid://c8nap5w6imh4a" path="res://scene/tomate.tscn" id="7_7ycci"]
 
 [node name="windowTest" type="Node2D"]
 y_sort_enabled = true
@@ -26,28 +28,21 @@ position = Vector2(1079, 642)
 
 [node name="arnaqueur" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1160, 198)
-dialogue_path = "res://dialogue/arnaqueur.json"
 
 [node name="notaire" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1120, 449)
-dialogue_path = "res://dialogue/notaire.json"
-
-[node name="paysan" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(277, 577)
 
 [node name="tavernier" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(833, 287)
 
 [node name="professeur" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1112, 881)
-dialogue_path = "res://dialogue/professeur.json"
 
 [node name="mamie" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(786, 685)
 
 [node name="maire" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(822, 882)
-dialogue_path = "res://dialogue/maire.json"
 
 [node name="pecheur" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(446, 984)
@@ -58,5 +53,11 @@ position = Vector2(446, 984)
 process_callback = 0
 wait_time = 300.0
 one_shot = true
+
+[node name="paysan" parent="." instance=ExtResource("6_mpt20")]
+position = Vector2(275, 584)
+
+[node name="tomate" parent="." instance=ExtResource("7_7ycci")]
+position = Vector2(409, 611)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

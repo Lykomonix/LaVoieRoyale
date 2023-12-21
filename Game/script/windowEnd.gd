@@ -2,6 +2,7 @@ extends Node2D
 
 var choix = 1
 
+
 func _process(delta):
 	if Input.is_action_just_pressed("ui_up") and choix != 1:
 		choix-=1
