@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://cbde4ncinxdu2"]
+[gd_scene load_steps=7 format=3 uid="uid://cbde4ncinxdu2"]
 
 [ext_resource type="PackedScene" uid="uid://bj1g5xutg7yxw" path="res://scene/newMap.tscn" id="1_1mjiq"]
 [ext_resource type="Script" path="res://script/windowPlay.gd" id="1_qvymn"]
 [ext_resource type="PackedScene" uid="uid://bi764xd14c4rj" path="res://scene/anime_player.tscn" id="2_cf20v"]
 [ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/PNJ.tscn" id="3_0xtay"]
 [ext_resource type="PackedScene" uid="uid://0e0qu8v4n52w" path="res://scene/HUD.tscn" id="5_n8r3j"]
+[ext_resource type="Script" path="res://script/notaire.gd" id="6_5m0gn"]
 
 [node name="windowTest" type="Node2D"]
 y_sort_enabled = true
@@ -28,35 +29,39 @@ position = Vector2(1079, 642)
 position = Vector2(1160, 198)
 dialogue_path = "res://dialogue/arnaqueur.json"
 
-[node name="notaire" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(1120, 449)
-dialogue_path = "res://dialogue/notaire.json"
-
 [node name="paysan" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(277, 577)
+position = Vector2(339, 562)
 
 [node name="tavernier" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(833, 287)
+position = Vector2(819, 344)
 
 [node name="professeur" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(1112, 881)
+position = Vector2(1220, 837)
 dialogue_path = "res://dialogue/professeur.json"
 
 [node name="mamie" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(786, 685)
+position = Vector2(848, 725)
 
 [node name="maire" parent="." instance=ExtResource("3_0xtay")]
-position = Vector2(822, 882)
+position = Vector2(795, 925)
 dialogue_path = "res://dialogue/maire.json"
 
 [node name="pecheur" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(446, 984)
 
 [node name="HUD" parent="." instance=ExtResource("5_n8r3j")]
+visible = false
 
 [node name="Timer" type="Timer" parent="."]
 process_callback = 0
 wait_time = 300.0
 one_shot = true
+
+[node name="notaire" type="Node2D" parent="."]
+script = ExtResource("6_5m0gn")
+
+[node name="pnj" parent="notaire" instance=ExtResource("3_0xtay")]
+position = Vector2(1109, 461)
+dialogue_path = "res://dialogue/notaire.json"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
