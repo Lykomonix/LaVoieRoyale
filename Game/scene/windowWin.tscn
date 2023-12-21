@@ -1,21 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://lht7i3eutj2x"]
+[gd_scene load_steps=4 format=3 uid="uid://lht7i3eutj2x"]
 
 [ext_resource type="Script" path="res://script/windowEnd.gd" id="1_i8cs5"]
-[ext_resource type="PackedScene" uid="uid://dvhmjb44mbg2x" path="res://scene/map.tscn" id="1_vm521"]
-[ext_resource type="PackedScene" uid="uid://drjilsvtwpwyj" path="res://scene/fields.tscn" id="2_al7bj"]
-[ext_resource type="PackedScene" uid="uid://bndpjvgumg6m4" path="res://scene/castle.tscn" id="3_16el3"]
+[ext_resource type="PackedScene" uid="uid://bj1g5xutg7yxw" path="res://scene/newMap.tscn" id="2_345ml"]
 [ext_resource type="Texture2D" uid="uid://dkpt7vvkp5trd" path="res://images/crown.png" id="4_xwow8"]
 
 [node name="windowWin" type="Node2D"]
 script = ExtResource("1_i8cs5")
 
-[node name="downtown" parent="." instance=ExtResource("1_vm521")]
-
-[node name="Fields" parent="." instance=ExtResource("2_al7bj")]
-position = Vector2(-48, 27)
-
-[node name="castle" parent="." instance=ExtResource("3_16el3")]
-position = Vector2(1088, 131)
+[node name="newMap" parent="." instance=ExtResource("2_345ml")]
 
 [node name="zoneText" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(1024, 640)
