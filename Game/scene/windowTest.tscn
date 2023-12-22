@@ -25,7 +25,7 @@ script = ExtResource("1_qvymn")
 [node name="newMap" parent="." instance=ExtResource("1_1mjiq")]
 
 [node name="player" parent="." instance=ExtResource("2_cf20v")]
-position = Vector2(871, 347)
+position = Vector2(370, 541)
 
 [node name="princesse" parent="." instance=ExtResource("3_0xtay")]
 position = Vector2(1779, 557)
@@ -57,7 +57,7 @@ wait_time = 300.0
 one_shot = true
 
 [node name="bouteille" parent="." instance=ExtResource("9_l6bsy")]
-position = Vector2(993, 765)
+position = Vector2(850, 547)
 
 [node name="mamie" parent="." instance=ExtResource("10_osvml")]
 position = Vector2(785, 687)

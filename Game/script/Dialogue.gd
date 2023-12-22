@@ -3,7 +3,7 @@ signal dialogue_finished
 
 @export_file("*.json") var d_file
 
-@onready var dialogue_path = "res://dialogue/paysan.json" 
+var dialogue_path # = "res://dialogue/paysan.json" 
 var dialogue=[]
 var current_dialogue_id = 0
 var d_active = false
@@ -48,6 +48,7 @@ func next_script():
 	if current_dialogue_id >= len(dialogue):
 		d_active = false
 		
+		print(get_parent().get_parent().name)
 		if get_parent().get_parent().state == 0 or get_parent().get_parent().state == 2 :
 			get_parent().get_parent().state += 1
 		$NinePatchRect.visible = false
