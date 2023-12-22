@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://0e0qu8v4n52w"]
 
-[ext_resource type="Texture2D" uid="uid://hlj52m43qwq8" path="res://images/zoin.png" id="1_ctawu"]
+[ext_resource type="Texture2D" uid="uid://daj4w8tnoj22q" path="res://images/zoin.png" id="1_ctawu"]
 [ext_resource type="Script" path="res://script/HUD.gd" id="1_ey6y8"]
-[ext_resource type="Texture2D" uid="uid://c1fioy52epq5j" path="res://images/sacs.png" id="2_hq0jn"]
+[ext_resource type="Texture2D" uid="uid://bi23nh0ijd2yr" path="res://images/sacs.png" id="2_hq0jn"]
 [ext_resource type="Script" path="res://script/sac.gd" id="3_akp2h"]
 [ext_resource type="PackedScene" uid="uid://brgt2hmis76a2" path="res://scene/item.tscn" id="4_6jd3g"]
-[ext_resource type="Texture2D" uid="uid://do04x6hgamk76" path="res://images/zoom.png" id="6_04qre"]
+[ext_resource type="Texture2D" uid="uid://csx1se2bf54c2" path="res://images/zoom.png" id="6_04qre"]
 [ext_resource type="Script" path="res://script/sprZoom.gd" id="7_kspe8"]
 [ext_resource type="PackedScene" uid="uid://bgsnrx22q0kec" path="res://scene/vente.tscn" id="8_ww4xc"]
 

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0jxn6gi18sow"]
+
+[ext_resource type="Script" path="res://script/mamie.gd" id="1_a14lj"]
+[ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/personnages/PNJ.tscn" id="2_0ju6v"]
+
+[node name="mamie" type="Node2D"]
+script = ExtResource("1_a14lj")
+
+[node name="PNJ" parent="." instance=ExtResource("2_0ju6v")]
