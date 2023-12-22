@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3 uid="uid://bj1g5xutg7yxw"]
 
-[ext_resource type="Texture2D" uid="uid://7yxlr4lfhfkb" path="res://ASSETS/Sprites/Town Tileset v1.4.png" id="1_j1cky"]
-[ext_resource type="Texture2D" uid="uid://c6dmfx1x5w812" path="res://ASSETS/Forest Tileset V3.png" id="2_0mfse"]
-[ext_resource type="Texture2D" uid="uid://ga27m0wlg5ye" path="res://ASSETS/ground1.png" id="2_i5iaa"]
-[ext_resource type="Texture2D" uid="uid://ckgwnfw4atpdo" path="res://ASSETS/plains_V2.png" id="3_g3u0i"]
+[ext_resource type="Texture2D" uid="uid://baa33spoumccd" path="res://ASSETS/Sprites/Town Tileset v1.4.png" id="1_j1cky"]
+[ext_resource type="Texture2D" uid="uid://c0gnueep4bxdc" path="res://ASSETS/Forest Tileset V3.png" id="2_0mfse"]
+[ext_resource type="Texture2D" uid="uid://dxdnn0pa8i5x6" path="res://ASSETS/ground1.png" id="2_i5iaa"]
+[ext_resource type="Texture2D" uid="uid://b1a51xigb2yo0" path="res://ASSETS/plains_V2.png" id="3_g3u0i"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_n8q0u"]
 tile_data = PackedInt32Array(0, 262144, 2, 65536, 393216, 1)
