@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3 uid="uid://dtm123p1vastn"]
 
-[ext_resource type="Texture2D" uid="uid://0c48te27hps0" path="res://Images/TownTilesetv1.4.png" id="1_yg22r"]
-[ext_resource type="Texture2D" uid="uid://3h7skt84l0g" path="res://Images/plainsV2.png" id="2_s1df7"]
-[ext_resource type="Texture2D" uid="uid://w2qe666khte" path="res://Images/ForestTilesetV3.png" id="3_lqfof"]
-[ext_resource type="Texture2D" uid="uid://doqo4ghxvcatl" path="res://Images/ground1.png" id="4_dm0po"]
+[ext_resource type="Texture2D" uid="uid://du1od7v0dh3bd" path="res://Images/TownTilesetv1.4.png" id="1_yg22r"]
+[ext_resource type="Texture2D" uid="uid://cawbyv24jt86g" path="res://Images/plainsV2.png" id="2_s1df7"]
+[ext_resource type="Texture2D" uid="uid://ch8yf220n0757" path="res://Images/ForestTilesetV3.png" id="3_lqfof"]
+[ext_resource type="Texture2D" uid="uid://dxdnn0pa8i5x6" path="res://Images/ground1.png" id="4_dm0po"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_n8q0u"]
 tile_data = PackedInt32Array(0, 262144, 2, 65536, 393216, 1)

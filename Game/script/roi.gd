@@ -9,7 +9,7 @@ var dialogue_path = "res://dialogue/roi.json"
 func _ready():
 	# Set NPC's sprite frame and type
 	$PNJ/sprPNJ.frame = 0
-	$PNJ.set_type(2)
+	$PNJ.set_type(1)
 	# Set the dialogue path for the NPC's dialogue box
 	$PNJ/Dialogue.dialogue_path = dialogue_path
 
@@ -24,10 +24,11 @@ func _process(delta):
 		if state == 0:
 			print("Starting quest")
 			$PNJ/Dialogue.next_script()
+			state += 1
 		elif state == 1:
 			$PNJ/Dialogue.next_script()
 			print("Going on the quest")
-			state += 1
+			
 		else:
 			$PNJ/Dialogue.next_script()
 			get_parent().finAlliance()  # Perform an action to end or progress the quest

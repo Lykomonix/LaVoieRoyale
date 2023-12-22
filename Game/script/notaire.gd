@@ -2,7 +2,7 @@ extends Node2D
 
 # Path to the NPC dialogue file
 var dialogue_path = "res://dialogue/notaire.json"
-
+var state = 0
 func _ready():
 	# Set NPC's sprite frame and dialogue path
 	$PNJ/sprPNJ.frame = 3
