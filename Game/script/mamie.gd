@@ -1,26 +1,33 @@
 extends Node2D
 
+# Variable to track the dialogue progression
 var state = 0
 
+# Path to the NPC dialogue file
 var dialogue_path = "res://dialogue/mamie.json"
 
 func _ready():
+	# Set NPC's sprite and type
 	$PNJ/sprPNJ.frame = 8
 	$PNJ.set_type(2)
-	$PNJ/Dialogue.	dialogue_path = dialogue_path
+	# Set the dialogue path for the NPC's dialogue box
+	$PNJ/Dialogue.dialogue_path = dialogue_path
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	$PNJ.dialogue_index=state
+	# Set the dialogue index for the NPC's dialogue box
+	$PNJ.dialogue_index = state
+	
+	# Check for player interaction in the chat zone
 	if Input.is_action_just_pressed("ui_accept") and $PNJ.player_in_chat_zone:
-		print("state : ",state)
+		print("state : ", state)
 		if state == 0:
-			print("début quête")
+			print("Starting quest")
 			$PNJ/Dialogue.next_script()
 		elif state == 1:
 			$PNJ/Dialogue.next_script()
-			print("va faire la quete")
-			get_parent().ajouteItem()
-			state +=1
+			print("Going on the quest")
+			get_parent().ajouteItem()  # Add item for quest completion
+			state += 1
 		else:
 			$PNJ/Dialogue.next_script()
