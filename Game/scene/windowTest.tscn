@@ -1,18 +1,18 @@
 [gd_scene load_steps=19 format=3 uid="uid://cbde4ncinxdu2"]
 
-[ext_resource type="PackedScene" uid="uid://bj1g5xutg7yxw" path="res://scene/newMap.tscn" id="1_1mjiq"]
+[ext_resource type="PackedScene" uid="uid://dtm123p1vastn" path="res://scene/newMap.tscn" id="1_1mjiq"]
 [ext_resource type="Script" path="res://script/windowPlay.gd" id="1_qvymn"]
-[ext_resource type="PackedScene" uid="uid://bi764xd14c4rj" path="res://scene/anime_player.tscn" id="2_cf20v"]
+[ext_resource type="PackedScene" uid="uid://bi764xd14c4rj" path="res://scene/animePlayer.tscn" id="2_cf20v"]
 [ext_resource type="PackedScene" uid="uid://g4c2gnepeixs" path="res://scene/personnages/tavernier.tscn" id="5_dchvm"]
-[ext_resource type="PackedScene" uid="uid://0e0qu8v4n52w" path="res://scene/HUD.tscn" id="5_n8r3j"]
-[ext_resource type="PackedScene" uid="uid://bjmclo0n4arp0" path="res://scene/personnages/paysan.tscn" id="6_mpt20"]
-[ext_resource type="PackedScene" uid="uid://c8nap5w6imh4a" path="res://scene/objets/tomate.tscn" id="7_7ycci"]
-[ext_resource type="PackedScene" uid="uid://c1k8cgd83boph" path="res://scene/objets/bouteille.tscn" id="9_l6bsy"]
+[ext_resource type="PackedScene" uid="uid://0e0qu8v4n52w" path="res://scene/hud.tscn" id="5_n8r3j"]
+[ext_resource type="PackedScene" uid="uid://bjmclo0n4arp0" path="res://scene/paysan.tscn" id="6_mpt20"]
+[ext_resource type="PackedScene" uid="uid://c8nap5w6imh4a" path="res://scene/tomate.tscn" id="7_7ycci"]
+[ext_resource type="PackedScene" uid="uid://c1k8cgd83boph" path="res://scene/bouteille.tscn" id="9_l6bsy"]
 [ext_resource type="PackedScene" uid="uid://b0jxn6gi18sow" path="res://scene/personnages/mamie.tscn" id="10_osvml"]
 [ext_resource type="PackedScene" uid="uid://b7liunjsqsq2b" path="res://scene/personnages/arnaqueur.tscn" id="12_0eq63"]
-[ext_resource type="PackedScene" uid="uid://22jceekt7tlr" path="res://scene/personnages/notaire.tscn" id="12_ftxdc"]
+[ext_resource type="PackedScene" uid="uid://22jceekt7tlr" path="res://scene/notaire.tscn" id="12_ftxdc"]
 [ext_resource type="PackedScene" uid="uid://cculv5ekomob8" path="res://scene/personnages/pecheur.tscn" id="13_34w7g"]
-[ext_resource type="PackedScene" uid="uid://dgv8aek25rpeo" path="res://scene/objets/canne_a_peche.tscn" id="14_757vo"]
+[ext_resource type="PackedScene" uid="uid://dgv8aek25rpeo" path="res://scene/objets/canneAPeche.tscn" id="14_757vo"]
 [ext_resource type="PackedScene" uid="uid://cmpq7w7kc46a" path="res://scene/enfant.tscn" id="14_ssoau"]
 [ext_resource type="PackedScene" uid="uid://c0vlb6bbpdsgb" path="res://scene/personnages/maire.tscn" id="15_5f01b"]
 [ext_resource type="PackedScene" uid="uid://cxwtueri4hmki" path="res://scene/personnages/professeur.tscn" id="16_cpiwh"]
@@ -27,6 +27,7 @@ script = ExtResource("1_qvymn")
 
 [node name="player" parent="." instance=ExtResource("2_cf20v")]
 position = Vector2(370, 541)
+speed = 250
 
 [node name="enfant" parent="." instance=ExtResource("14_ssoau")]
 position = Vector2(1072, 642)

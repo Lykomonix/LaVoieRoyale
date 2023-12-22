@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://b6qh5v7yq5eiy"]
 
 [ext_resource type="Script" path="res://script/windowCredits.gd" id="1_2qbv5"]
-[ext_resource type="PackedScene" uid="uid://bj1g5xutg7yxw" path="res://scene/newMap.tscn" id="2_abdob"]
-[ext_resource type="Texture2D" uid="uid://e4th8pubnxwr" path="res://images/simon.jpg" id="4_pphu2"]
-[ext_resource type="Texture2D" uid="uid://dnrxwg8653sj2" path="res://images/mathieu.jpg" id="4_qad60"]
-[ext_resource type="Texture2D" uid="uid://c53om5hf1bm14" path="res://images/henri.jpg" id="5_juw6l"]
+[ext_resource type="PackedScene" uid="uid://dtm123p1vastn" path="res://scene/newMap.tscn" id="2_abdob"]
+[ext_resource type="Texture2D" uid="uid://c53om5hf1bm14" path="res://Images/henri.jpg" id="3_ekyj2"]
+[ext_resource type="Texture2D" uid="uid://e4th8pubnxwr" path="res://Images/simon.jpg" id="4_46ktk"]
+[ext_resource type="Texture2D" uid="uid://dnrxwg8653sj2" path="res://Images/mathieu.jpg" id="5_6qhwo"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_acw1p"]
 font_size = 36
@@ -68,7 +68,7 @@ metadata/_edit_group_ = true
 [node name="sprHenri" type="Sprite2D" parent="zoneText/henri"]
 position = Vector2(290.5, 164)
 scale = Vector2(0.453906, 0.455556)
-texture = ExtResource("5_juw6l")
+texture = ExtResource("3_ekyj2")
 
 [node name="lblNom" type="Label" parent="zoneText/henri"]
 layout_mode = 0
@@ -105,7 +105,7 @@ metadata/_edit_group_ = true
 [node name="sprSimon" type="Sprite2D" parent="zoneText/simon"]
 position = Vector2(290.5, 164)
 scale = Vector2(0.145466, 0.177489)
-texture = ExtResource("4_pphu2")
+texture = ExtResource("4_46ktk")
 
 [node name="lblNom" type="Label" parent="zoneText/simon"]
 layout_mode = 0
@@ -142,7 +142,7 @@ metadata/_edit_group_ = true
 [node name="sprMathieu" type="Sprite2D" parent="zoneText/mathieu"]
 position = Vector2(290.5, 164)
 scale = Vector2(0.339766, 0.341311)
-texture = ExtResource("4_qad60")
+texture = ExtResource("5_6qhwo")
 
 [node name="lblNom" type="Label" parent="zoneText/mathieu"]
 layout_mode = 0

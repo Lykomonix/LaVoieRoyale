@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cmpq7w7kc46a"]
 
 [ext_resource type="Script" path="res://script/enfant.gd" id="1_xal65"]
-[ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/personnages/PNJ.tscn" id="2_df6s5"]
+[ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/personnages/pnj.tscn" id="2_df6s5"]
 
 [node name="enfant" type="Node2D"]
 script = ExtResource("1_xal65")

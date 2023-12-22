@@ -1,16 +1,16 @@
 [gd_scene load_steps=9 format=3 uid="uid://0e0qu8v4n52w"]
 
-[ext_resource type="Texture2D" uid="uid://daj4w8tnoj22q" path="res://images/zoin.png" id="1_ctawu"]
-[ext_resource type="Script" path="res://script/HUD.gd" id="1_ey6y8"]
-[ext_resource type="Texture2D" uid="uid://bi23nh0ijd2yr" path="res://images/sacs.png" id="2_hq0jn"]
+[ext_resource type="Script" path="res://script/hud.gd" id="1_eh7sj"]
+[ext_resource type="Texture2D" uid="uid://ouea6nonj6np" path="res://Images/zoin.png" id="2_twtjl"]
 [ext_resource type="Script" path="res://script/sac.gd" id="3_akp2h"]
+[ext_resource type="Texture2D" uid="uid://bivsso6j5gfq4" path="res://Images/sacs.png" id="3_cjas3"]
 [ext_resource type="PackedScene" uid="uid://brgt2hmis76a2" path="res://scene/item.tscn" id="4_6jd3g"]
-[ext_resource type="Texture2D" uid="uid://csx1se2bf54c2" path="res://images/zoom.png" id="6_04qre"]
+[ext_resource type="Texture2D" uid="uid://b1dt4um5tdxbm" path="res://Images/zoom.png" id="5_wmb02"]
 [ext_resource type="Script" path="res://script/sprZoom.gd" id="7_kspe8"]
 [ext_resource type="PackedScene" uid="uid://bgsnrx22q0kec" path="res://scene/vente.tscn" id="8_ww4xc"]
 
 [node name="HUD" type="CanvasLayer"]
-script = ExtResource("1_ey6y8")
+script = ExtResource("1_eh7sj")
 
 [node name="prestige" type="ProgressBar" parent="."]
 offset_left = 17.0
@@ -39,19 +39,19 @@ vertical_alignment = 1
 [node name="zoin" type="Sprite2D" parent="."]
 position = Vector2(50.75, 109.75)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("1_ctawu")
+texture = ExtResource("2_twtjl")
 
 [node name="sac" type="Sprite2D" parent="."]
 position = Vector2(96, 984)
 scale = Vector2(0.75, 0.75)
-texture = ExtResource("2_hq0jn")
+texture = ExtResource("3_cjas3")
 vframes = 2
 script = ExtResource("3_akp2h")
 
 [node name="sprZoom" type="Sprite2D" parent="."]
 position = Vector2(1824, 96)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("6_04qre")
+texture = ExtResource("5_wmb02")
 vframes = 2
 script = ExtResource("7_kspe8")
 
