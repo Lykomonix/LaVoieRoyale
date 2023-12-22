@@ -2,23 +2,24 @@ extends Node2D
 
 var prestige = 0
 var inventaire = []
-var argent = 20
+var argent = 0
 var rng = RandomNumberGenerator.new()
 
 func _ready():
 	finNaissance()
-#	setPNJ()
 	$Timer.start()
 
 func _process(delta):
 	$HUD/prestige.value = prestige
 	$HUD/lbl_argent.text = str(argent)
-	if Input.is_key_pressed(KEY_A):
-		get_parent().gagne()
-	if Input.is_key_pressed(KEY_E): 
-		get_parent().perdu()
-		
 
+func recompense():
+	var numRandom = rng.randi_range(1,100)
+	if numRandom < 70:
+		ajouteItem()
+	else:
+		ajouteArgent()
+		
 func ajouteItem():
 	var item
 	match inventaire.size():
@@ -61,35 +62,9 @@ func ajouteItem():
 		prestige += 15
 		
 func ajouteArgent():
-	var gain = rng.randi_range(1, 10)
+	var gain = rng.randi_range(1, 20)
 	print("+%d argent" % gain)
 	argent += gain
-
-#func setPNJ():
-##	set image perso
-##	$roi/sprPNJ.frame = 0
-##	$princesse/sprPNJ.frame = 1
-#
-#
-##	$enfant/sprPNJ.frame = 4
-#	# $paysan/sprPNJ.frame = 5
-#	# $tavernier/sprPNJ.frame = 6
-#	# $professeur/sprPNJ.frame = 7
-#	# $mamie/sprPNJ.frame = 8
-#	# $maire/sprPNJ.frame = 9
-#	#$pecheur/sprPNJ.frame = 10
-##	set le type
-##	$roi.set_type(1)
-##	$princesse.set_type(0)
-#	# $arnaqueur/pnj.set_type(1)
-#	# $notaire/pnj.set_type(1)
-##	$enfant.set_type(1)
-#	# $paysan.set_type(2)
-#	#$tavernier.set_type(2)
-#	# $professeur.set_type(2)
-#	# $mamie.set_type(2)
-#	# $maire.set_type(2)
-#	#$pecheur.set_type(2)
 
 func finAlliance():
 	var ranNumber = rng.randi_range(1, 100)

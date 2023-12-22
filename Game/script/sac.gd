@@ -10,7 +10,9 @@ func _input(event):
 			if get_parent().get_node("item").visible:
 				get_parent().get_node("item").visible = false
 				self.frame = 0  # Set sprite frame to 0 (assuming it's a sprite sheet)
+				get_parent().get_parent().get_node("player").move = true
 			else:
 				get_parent().get_node("item").visible = true
 				self.frame = 1  # Set sprite frame to 1 (assuming it's a sprite sheet)
 				print(get_parent().get_parent().inventaire)  # Print inventory info or perform an action
+				get_parent().get_parent().get_node("player").move = false

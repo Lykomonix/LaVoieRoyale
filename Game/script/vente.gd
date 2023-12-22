@@ -60,13 +60,17 @@ func check():
 			1:
 				if get_parent().get_parent().argent >= 20:
 					get_parent().get_parent().finAchatTitre()
+					get_parent().get_parent().get_node("notaire").state -=1
 			2:
 				if get_parent().get_parent().argent >= 20:
 					get_parent().get_parent().finPossession("notaire")
+				else:
+					get_parent().get_parent().get_node("notaire").state -=1
 	else:
 		if choix == 1 and get_parent().get_parent().argent >= 10:
 			get_parent().get_parent().finPossession("arnaqueur")
-
+		else:
+			get_parent().get_parent().get_node("arnaqueur").state -=1
 # Function to initiate the selling process based on the seller
 func vente(personne):
 	# Initiates the selling process based on the seller ('personne')
