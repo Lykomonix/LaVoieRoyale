@@ -27,7 +27,7 @@ func _process(delta):
 		elif state == 1:
 			$PNJ/Dialogue.next_script()
 			print("Going on the quest")
-			get_parent().ajouteItem()  # Add item for quest completion
+			get_parent().recompense()  # Add item for quest completion
 			state += 1
 		else:
 			$PNJ/Dialogue.next_script()

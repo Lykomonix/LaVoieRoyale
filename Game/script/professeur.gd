@@ -23,6 +23,6 @@ func _process(delta):
 		if state == 0:
 			print("Starting quest")
 			$PNJ/Dialogue.next_script()
-			get_parent().ajouteItem()  # Perform an action related to the quest
+			get_parent().recompense()  # Perform an action related to the quest
 		else:
 			$PNJ/Dialogue.next_script()  # Move to the next dialogue script

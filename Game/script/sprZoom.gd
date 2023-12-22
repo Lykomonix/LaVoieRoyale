@@ -12,8 +12,10 @@ func _input(event):
 				get_parent().get_parent().get_node("player/Camera").enabled = false
 				get_parent().get_parent().get_node("player/sprHere").visible = true
 				frame = 1  # Update frame to 1
+				get_parent().get_parent().get_node("player").move = false
 			else:
 				# Enable the 'Camera' and hide 'sprHere' when frame is not 0
 				get_parent().get_parent().get_node("player/Camera").enabled = true
 				get_parent().get_parent().get_node("player/sprHere").visible = false
 				frame = 0  # Update frame to 0
+				get_parent().get_parent().get_node("player").move = true

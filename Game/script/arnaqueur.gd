@@ -1,8 +1,8 @@
 extends Node2D
 
+var state = 0
 # Path to the dialogue file for the NPC
 var dialogue_path = "res://dialogue/arnaqueur.json"
-
 # Function called when the scene is ready
 func _ready():
 	# Set the NPC sprite frame to 2
