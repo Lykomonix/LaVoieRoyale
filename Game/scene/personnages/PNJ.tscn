@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://bji4ayw5rnd3b"]
 
-[ext_resource type="Script" path="res://script/PNJ.gd" id="1_rxn4q"]
-[ext_resource type="Texture2D" uid="uid://du27a1yplp7l4" path="res://images/PNJ.png" id="2_6nbv8"]
+[ext_resource type="Script" path="res://script/pnj.gd" id="1_rxn4q"]
+[ext_resource type="Texture2D" uid="uid://437k3ibgyvha" path="res://images/PNJ.png" id="2_6nbv8"]
 [ext_resource type="Script" path="res://script/sprPNJ.gd" id="3_5cegf"]
-[ext_resource type="Texture2D" uid="uid://tqm68mpv018k" path="res://images/quest.png" id="4_78kod"]
+[ext_resource type="Texture2D" uid="uid://cnkuefitqp8et" path="res://images/quest.png" id="4_78kod"]
 [ext_resource type="PackedScene" uid="uid://c6vb22n2hgl3s" path="res://scene/dialogue.tscn" id="5_w2wjp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_36ofq"]

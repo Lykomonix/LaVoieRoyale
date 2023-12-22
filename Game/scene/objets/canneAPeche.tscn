@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dgv8aek25rpeo"]
 
-[ext_resource type="Script" path="res://script/canne_a_peche.gd" id="1_jrjw6"]
-[ext_resource type="Texture2D" uid="uid://cbqd8jbvk0s6j" path="res://images/fishing_rod.png" id="2_0lwc7"]
+[ext_resource type="Script" path="res://script/canneAPeche.gd" id="1_jrjw6"]
+[ext_resource type="Texture2D" uid="uid://k38w23yvt42u" path="res://Images/fishingRod.png" id="2_0lwc7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s2h8d"]
 size = Vector2(36.5, 35)

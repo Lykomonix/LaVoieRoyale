@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cculv5ekomob8"]
 
 [ext_resource type="Script" path="res://script/pecheur.gd" id="1_yedpl"]
-[ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/personnages/PNJ.tscn" id="2_rndn6"]
+[ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/personnages/pnj.tscn" id="2_rndn6"]
 
 [node name="pecheur" type="Node2D"]
 script = ExtResource("1_yedpl")
