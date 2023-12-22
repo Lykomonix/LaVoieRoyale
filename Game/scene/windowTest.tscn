@@ -27,6 +27,7 @@ script = ExtResource("1_qvymn")
 
 [node name="player" parent="." instance=ExtResource("2_cf20v")]
 position = Vector2(370, 541)
+speed = 250
 
 [node name="enfant" parent="." instance=ExtResource("14_ssoau")]
 position = Vector2(1072, 642)
