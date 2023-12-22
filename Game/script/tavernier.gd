@@ -8,7 +8,8 @@ func _ready():
 	$PNJ/sprPNJ.frame = 6
 	$PNJ.set_type(2)
 	$PNJ/Dialogue.dialogue_path = dialogue_path
-	
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	$PNJ.dialogue_index=state
 	if Input.is_action_just_pressed("ui_accept") and $PNJ.player_in_chat_zone:

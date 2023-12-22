@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1k8cgd83boph"]
+
+[ext_resource type="Script" path="res://script/bouteille.gd" id="1_v2qnr"]
+[ext_resource type="Texture2D" uid="uid://q6y6k8f770xk" path="res://images/biere.png" id="2_npmqk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ux55h"]
+
+[node name="bouteille" type="StaticBody2D"]
+script = ExtResource("1_v2qnr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ux55h")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3.57628e-07, -3.57628e-07)
+scale = Vector2(0.078125, 0.078125)
+texture = ExtResource("2_npmqk")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
