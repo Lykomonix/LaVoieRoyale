@@ -71,7 +71,7 @@ func setPNJ():
 	$princesse/sprPNJ.frame = 1
 	
 	
-	$enfant/sprPNJ.frame = 4
+#	$enfant/sprPNJ.frame = 4
 	# $paysan/sprPNJ.frame = 5
 	# $tavernier/sprPNJ.frame = 6
 	# $professeur/sprPNJ.frame = 7
@@ -83,7 +83,7 @@ func setPNJ():
 	$princesse.set_type(0)
 	# $arnaqueur/pnj.set_type(1)
 	# $notaire/pnj.set_type(1)
-	$enfant.set_type(1)
+#	$enfant.set_type(1)
 	# $paysan.set_type(2)
 	#$tavernier.set_type(2)
 	# $professeur.set_type(2)
