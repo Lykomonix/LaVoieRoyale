@@ -26,6 +26,7 @@ text = "acheter un titre de noblesse pour 20 d'or"
 horizontal_alignment = 1
 
 [node name="lblLake" type="Label" parent="."]
+layout_mode = 0
 offset_top = 176.0
 offset_right = 640.0
 offset_bottom = 231.0
@@ -34,6 +35,7 @@ text = "acheter le lac pour 10 d'or"
 horizontal_alignment = 1
 
 [node name="lblFarm" type="Label" parent="."]
+layout_mode = 0
 offset_top = 248.0
 offset_right = 640.0
 offset_bottom = 293.0
@@ -42,6 +44,7 @@ text = "acheter les champs pour 20 d'or"
 horizontal_alignment = 1
 
 [node name="lblQuit" type="Label" parent="."]
+layout_mode = 0
 offset_top = 320.0
 offset_right = 640.0
 offset_bottom = 384.0
@@ -50,6 +53,7 @@ text = "Quitter"
 horizontal_alignment = 1
 
 [node name="lblChoice" type="Label" parent="."]
+layout_mode = 0
 offset_left = 40.0
 offset_top = 96.0
 offset_right = 63.0

@@ -1,15 +1,15 @@
 [gd_scene load_steps=11 format=3 uid="uid://bj1g5xutg7yxw"]
 
-[ext_resource type="Texture2D" uid="uid://7yxlr4lfhfkb" path="res://ASSETS/Sprites/Town Tileset v1.4.png" id="1_j1cky"]
-[ext_resource type="Texture2D" uid="uid://c6dmfx1x5w812" path="res://ASSETS/Forest Tileset V3.png" id="2_0mfse"]
-[ext_resource type="Texture2D" uid="uid://ga27m0wlg5ye" path="res://ASSETS/ground1.png" id="2_i5iaa"]
-[ext_resource type="Texture2D" uid="uid://ckgwnfw4atpdo" path="res://ASSETS/plains_V2.png" id="3_g3u0i"]
+[ext_resource type="Texture2D" uid="uid://baa33spoumccd" path="res://images/Town Tileset v1.4.png" id="1_appsk"]
+[ext_resource type="Texture2D" uid="uid://b1a51xigb2yo0" path="res://images/plains_V2.png" id="2_lhybr"]
+[ext_resource type="Texture2D" uid="uid://c0gnueep4bxdc" path="res://images/Forest Tileset V3.png" id="3_c50ca"]
+[ext_resource type="Texture2D" uid="uid://dxdnn0pa8i5x6" path="res://images/ground1.png" id="4_gfisb"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_n8q0u"]
 tile_data = PackedInt32Array(0, 262144, 2, 65536, 393216, 1)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u7wrg"]
-texture = ExtResource("1_j1cky")
+texture = ExtResource("1_appsk")
 6:1/0 = 0
 6:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:1/0/physics_layer_0/angular_velocity = 0.0
@@ -163,7 +163,7 @@ texture = ExtResource("1_j1cky")
 70:30/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m62kf"]
-texture = ExtResource("3_g3u0i")
+texture = ExtResource("2_lhybr")
 2:1/0 = 0
 2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:1/0/physics_layer_0/angular_velocity = 0.0
@@ -205,7 +205,7 @@ texture = ExtResource("3_g3u0i")
 5:1/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_riuun"]
-texture = ExtResource("2_0mfse")
+texture = ExtResource("3_c50ca")
 1:9/0 = 0
 1:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:9/0/physics_layer_0/angular_velocity = 0.0
@@ -261,7 +261,7 @@ texture = ExtResource("2_0mfse")
 12:18/0/physics_layer_0/polygon_0/points = PackedVector2Array(-55.5619, 61.1742, -54.4394, -55.5619, 53.8782, -57.8068, 53.4539, 58.7993)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_282g1"]
-texture = ExtResource("2_i5iaa")
+texture = ExtResource("4_gfisb")
 6:8/0 = 0
 6:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:8/0/physics_layer_0/angular_velocity = 0.0

@@ -13,7 +13,7 @@ func _ready():
 func _process(delta):
 	var inventaire = get_parent().inventaire
 	
-	if len(inventaire) >3:
+	if inventaire.size() > 3:
 		state = 1
 	
 	$PNJ.dialogue_index=state
