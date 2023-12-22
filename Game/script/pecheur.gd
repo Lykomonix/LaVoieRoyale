@@ -29,6 +29,6 @@ func _process(delta):
 		elif state == 2:
 			$PNJ/Dialogue.next_script()
 			print("Thanks for loyal customers")
-			get_parent().ajouteItem()
+			get_parent().recompense()
 		else:
 			$PNJ/Dialogue.next_script()

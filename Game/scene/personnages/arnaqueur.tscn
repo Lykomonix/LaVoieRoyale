@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b7liunjsqsq2b"]
 
-[ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/personnages/pnj.tscn" id="1_af7am"]
+[ext_resource type="PackedScene" uid="uid://bji4ayw5rnd3b" path="res://scene/personnages/PNJ.tscn" id="1_af7am"]
 [ext_resource type="Script" path="res://script/arnaqueur.gd" id="1_ydjg4"]
 
 [node name="arnaqueur" type="Node2D"]
