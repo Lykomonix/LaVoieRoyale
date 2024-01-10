@@ -1,0 +1,153 @@
+@startuml
+skinparam style strictuml
+skinparam classAttributeIconSize 0
+skinparam classFontStyle Bold
+hide enum methods
+hide interface attributes
+
+package models
+{
+    class Map
+    {
+        - TileMap : TileMap
+    }
+
+    class Hud
+    {
+        + _ready()
+    }
+
+    class item
+    {
+        + _input(event : Event)
+    }
+
+    class vente
+    {
+        + _input(event : Event)
+    }
+
+    class Player
+    {
+        - speed : Integer
+        - sprite : String
+        - move : Boolean
+        + _ready()
+        + _process(delta)
+        + player()
+    }
+
+    class Pnj
+    {
+        - Dialogue_path : String
+        - player : Player
+        - player_in_chat_zone : Boolean
+        - to_start : Boolean
+        - rng : RandomNumberGenerator
+        - type : Integer
+        - dialogue_index : Integer
+        + _ready()
+        + _process(delta : Integer)
+        + _on_dialogue_body_entered(body : Object)
+        + _on_dialogue_body_exited(body : Object)
+        + recompense()
+        + set_type(type : Integer)
+    }
+
+    class Dialogue
+    {
+        - d_file : String
+        - dialogue_path : String
+        - dialogue : String[]
+        - current_dialogue_id : Integer
+        - d_active : Boolean
+        + _ready()
+        + start(index : Integer)
+        + load_dialogue(index : Integer) : String
+        + _input(event : Event)
+        + next_script()
+    }
+}
+
+package views
+{
+    class WindowStart
+    {
+        - choix : Integer
+        + _process(delta : Integer)
+        + changePos()
+        + check()
+    }
+
+    class WindowCredits
+    {
+        + _process(delta : Integer)
+    }
+
+    class WindowPlay
+    {
+        - prestige : Integer
+        - inventaire : String[]
+        - argent : Integer
+        - rng : RandomNumberGenerator
+        + _ready()
+        + _process(delta)
+        + recompense()
+        + ajouteItem()
+        + ajouteArgent()
+        + finAlliance()
+        + finPossession(vendeur)
+        + finNaissance()
+        + finAchatTitre()
+        + finMaire()
+        + _on_timer_timeout()
+    }
+
+    class WindowLose
+    {
+        - choix : Integer
+        + _process(delta : Integer)
+        + changePos()
+        + check()
+    }
+
+    class WindowWin
+    {
+        - choix : Integer
+        + _process(delta : Integer)
+        + changePos()
+        + check()
+    }
+}
+
+package controllers
+{
+    class LaVoieRoyale
+    {
+        - window: Views
+        + _ready()
+        + nouvellePartie()
+        + credits()
+        + accueil()
+        + gagne(text : String)
+        + perdu(text : String)
+    }
+}
+
+LaVoieRoyale ..> WindowStart : <<use>>
+LaVoieRoyale ..> WindowCredits : <<use>>
+LaVoieRoyale ..> WindowPlay : <<use>>
+LaVoieRoyale ..> WindowLose : <<use>>
+LaVoieRoyale ..> WindowWin : <<use>>
+WindowStart *--> "1\npossède"Map
+WindowCredits *--> "1\npossède"Map
+WindowPlay *--> "1\npossède"Map
+WindowPlay *--> "1\npossède"Hud
+WindowPlay *--> "1\npossède"Player
+WindowPlay *--> "*\npossède"Pnj
+WindowLose *--> "1\npossède"Map
+WindowWin *--> "1\npossède"Map
+Hud *--> "1\npossède"item
+Hud *--> "1\npossède"vente
+Pnj *--> "1\npossède"Dialogue
+@enduml
