@@ -27,6 +27,7 @@ On débute la partie en tant qu'habitant Amboisien du tiers-état. L'objectif du
 - Rendez-vous dans le dossier Release
 - Exécutez *LaVoieRoyale - Setup.exe* en double cliquant dessus
 
+### *En cours de développement*
 ### Sous Linux
 - Effectuez un *git clone* de [__Game__](https://git.unistra.fr/auskour/t3-mod-23-b/-/tree/main/Game?ref_type=heads)
 - Entrez les commandes suivante dans un terminal :
